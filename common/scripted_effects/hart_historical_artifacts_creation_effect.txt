@@ -1,0 +1,38 @@
+﻿# Historical Artifacts Creation #
+
+
+create_artifact_seder_amram_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = artifact_seder_amram_name
+		description = artifact_seder_amram_description
+		template = hart_judaism_relic_template
+		type = miscellaneous
+		visuals = hart_torah_book
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 836.4.15
+			recipient = character:amram_gaon #Amram Gaon
+		}
+		modifier = seder_amram_modifier
+		save_scope_as = newly_created_artifact
+		decaying = yes
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = relic
+			value = flag:judaism
+		}
+		set_variable = seder_amram
+		save_scope_as = epic
+	}
+}

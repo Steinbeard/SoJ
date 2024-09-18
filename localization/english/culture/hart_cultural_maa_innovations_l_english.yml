@@ -1,0 +1,7 @@
+﻿l_english:
+
+ # Tribal Era
+
+ culture_parameter_unlock_maa_temple_zealots:0 "Can recruit [GetMaA('temple_zealots').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_temple_knights:0 "Can recruit [GetMaA('temple_knights').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_armed_traders:0 "Can recruit [GetMaA('armed_traders').GetName] as [men_at_arms|E]"

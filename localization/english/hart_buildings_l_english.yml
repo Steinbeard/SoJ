@@ -1,0 +1,39 @@
+﻿l_english:
+#  building_type_dome_of_the_rock_01:0 "Temple in Jerusalem"
+#  building_type_dome_of_the_rock_01_desc:0 "The Dome of the Rock is situated in the center of the Temple Mount, in the place where the Temple of Solomon and the Jewish Second Temple stood. The temples foundation stone is said to be the place where God created the world and the first human, Adam. The Dome of the Rock and the nearby Church of the Holy Sepulchre attract Abrahamic pilgrims from all around the world."
+#  building_dome_of_the_rock_01:0 "Dome of the Rock"
+#  building_dome_of_the_rock_01_desc:0 "$building_type_dome_of_the_rock_01_desc$"
+#  building_temple_in_jerusalem_01:0 "The Third Temple"
+#  building_temple_in_jerusalem_01_desc:0 "Hundreds of years after the destruction of the Second Temple the time has finally come to restore the Temple in Jerusalem! This Third Temple will stand the test of time, vigilantly guarded from all who would see it destroyed."
+ 
+ building_type_masada_01:1 "Masada"
+ building_type_masada_01_desc:0 "Abandoned after its fall to the Romans hundreds of years ago, Masada stands as nothing more then a shadow of its former self."
+ building_masada_01:0 "Ruins of Old Masada"
+ building_masada_01_desc:0 "$building_type_masada_01_desc$"
+
+ building_masada_02:0 "Restored Masadan Fortifications"
+ building_masada_02_desc:0 "The ancient fortress has been restored; the Roman battery, dismantled and dispersed. \n\nAtop natural walls of bedrock four hundred and fifty meters high, Masada stands rebuilt.\n\nAnd for all ages to come, as long as an Israelite sentry defends these walls, no one – not even a Roman legion – shall breach them." #TEST
+
+ building_masada_03:0 "Grand Fortifications of Masada"
+ building_masada_03_desc:0 "Restored according to the plans drafted by King Herod's architects, Masada contains an extensive garrison built to house a thousand men and thick walls that rise to meet the sky, all atop four hundred and fifty meters of raised bedrock.\n\nIts lavish palaces grant the residents a magnificent view of the Dead Sea."
+
+
+
+ building_type_sura_yeshiva_01:0 "Yeshiva of Sura"
+ building_type_sura_yeshiva_01_desc:0 "The largest center for Jewish scholars to study and develop the Halakha. The Yeshiva gives them a place to study, conduct research and debate the fine lines of Jewish practices. As a secondary purpose the Yeshiva also acts as a court of religious law."
+ building_sura_yeshiva_01:0 "Yeshiva of Sura"
+ building_sura_yeshiva_01_desc:0 "$building_type_sura_yeshiva_01_desc$"
+
+
+ building_sura_yeshiva_02:0 "Grand Yeshiva of Sura"
+ building_sura_yeshiva_02_desc:0 "The largest center for Jewish scholars to study and develop the Halakha. The Yeshiva gives them a place to study, conduct research and debate the fine lines of Jewish practices. The grand structure hosts a magnificent garden, a synagogue, study halls and a large court room."
+
+
+ building_type_kairouan_yeshiva_01:0 "Yeshiva of Kairouan"
+ building_type_kairouan_yeshiva_01_desc:0 "The second largest center for Jewish scholars to study and develop the Halakha. The Yeshiva gives them a place to study, conduct research and debate the fine lines of Jewish practices. As a secondary purpose the Yeshiva also acts as a court of religious law."
+ building_kairouan_yeshiva_01:0 "Yeshiva of Kairouan"
+ building_kairouan_yeshiva_01_desc:0 "$building_type_kairouan_yeshiva_01_desc$"
+
+
+ building_kairouan_yeshiva_02:0 "Grand Yeshiva of Kairouan"
+ building_kairouan_yeshiva_02_desc:0 "The second largest center for Jewish scholars to study and develop the Halakha. The Yeshiva gives them a place to study, conduct research and debate the fine lines of Jewish practices. The grand structure hosts a magnificent garden, a synagogue, study halls and a large court room."

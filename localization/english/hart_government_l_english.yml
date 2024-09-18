@@ -1,0 +1,13 @@
+﻿l_english:
+ government_is_halakha:0 "[government|E] type is [GetGovernment( 'halakha_government' ).GetName]"
+
+ halakha_government:0 "Halachic"
+ halakha_government_adjective:0 "Halachic"
+ halakha_government_realm:0 "Halachic"
+ halakha_government_desc:0 "$game_concept_halakha_desc$\n\n#F The Halakha binds us by law and kinship — a community that traces it's traditions and ancestry from Chazal. A Halachic leader relies heavily on the support of his community. United, they are a strength to be reckoned with, but a discontent the community withers from within.#!"
+ halakha_government_vassals_label:1 "Halachic [obligations|E] are based on [opinion|E]"
+ halakha_government_obligations:0 "From [opinion|E]"
+ halakha_government_tax_contribution_postfix:0 " (max [FixedPointToProgressbarValue(EmptyScope.ScriptValue('clan_government_tax_max_possible'))|1V])"
+ halakha_government_levies_contribution_postfix:0 " (max [FixedPointToProgressbarValue(EmptyScope.ScriptValue('clan_government_levies_max_possible'))|1V])"
+ halakha_government_unclamped_contribution_label:0 "Based on [opinion|E] of me"
+ chalakha_government_min_contribution_label:0 "[crown_authority|E] minimum"

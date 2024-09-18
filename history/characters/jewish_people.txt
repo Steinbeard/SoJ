@@ -1,0 +1,515 @@
+﻿
+# ==== Radhanite Rulers ==== #
+
+
+mordechai_radhanite = {
+	name = "Mordechai"
+	dynasty = 00280028	#Radhanite dynasty
+	dna = 01_mordechai
+	culture = "radhanite"
+	religion = "rabbinism"
+	trait = education_stewardship_3
+	trait = honest
+	trait = just
+	trait = calm
+	trait = shrewd
+	trait = adventurer
+	disallow_random_traits = yes
+	sexuality = heterosexual
+	martial = 4
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 4
+	learning = 9
+	prowess = 5
+	845.1.2 = {
+		birth = yes
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	862.1.1 = {
+		give_nickname = nick_the_own_culture
+	}
+	912.1.2 = {
+		death = yes
+	}
+}
+
+azariah_khiva = {
+	name = "Azariah"
+	dynasty = 00280128
+	dna = 01_mordechai
+	culture = "radhanite"
+	religion = "rabbinism"
+	trait = education_diplomacy_5
+	trait = patient
+	trait = deceitful
+	trait = calm
+	trait = fecund
+	trait = adventurer
+	disallow_random_traits = yes
+	health = 7
+	sexuality = heterosexual
+	martial = 5
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 4
+	learning = 4
+	prowess = 7
+	999.4.8 = {
+		birth = yes
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_iberian
+		    }
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	1058.1.1 = {
+		give_nickname = nick_the_elder
+	}
+	1079.1.2 = {
+		death = yes
+	}
+}
+
+# ==== Kochinim Rulers ==== #
+
+shemaya_kochin = {
+	name = "ShemaYah"
+	dynasty = 00280328
+	dna = 01_kochinim
+	culture = "kochinim"
+	religion = "malabarism"
+	trait = education_stewardship_3
+	trait = diligent
+	trait = gregarious
+	trait = impatient
+	trait = lifestyle_reveler
+	prowess = 3
+	842.11.2 = {
+		birth = yes
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		}
+	}
+	921.1.1 = {
+		death = yes
+	}
+}
+
+# ==== Vanity / Easteregg characters ==== #
+
+
+shlomo_vanity = {
+	name = "Shlomo"
+	dynasty = 00280228
+	dna = 01_shlomo
+	culture = "radhanite"
+	religion = "merkabah"
+	trait = education_learning_4
+	trait = arrogant
+	trait = honest
+	trait = greedy
+	trait = lifestyle_cantor_2
+	trait = adventurer
+	disallow_random_traits = yes
+	health = 5.5
+	sexuality = heterosexual
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 5
+	learning = 4
+	prowess = 9
+	831.2.2 = {
+		birth = yes
+		effect = {
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_iberian
+			learn_language = language_iranian
+		    }
+		}
+	}
+	867.1.1 = {
+		effect = {
+			add_gold = 600
+			root.dynasty = {
+				add_dynasty_prestige_level = 1	
+				add_dynasty_prestige = 50
+			}
+		}
+	}
+	902.5.12 = {
+		death = yes
+	}
+}
+
+omer_vanity = {
+	name = "Omer ibn Ezra al-Dimashqi"
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_martial_4
+	trait = arrogant
+	trait = eccentric
+	trait = wrathful
+	trait = loyal
+	trait = lifestyle_cantor_1
+	trait = organizer
+	trait = flexible_leader
+	disallow_random_traits = yes
+	health = 6.5
+	sexuality = heterosexual
+	martial = 7
+	diplomacy = 2
+	intrigue = 7
+	stewardship = 2
+	learning = 3
+	prowess = 11
+	833.2.2 = {
+		birth = yes
+	}
+	866.2.2 = {
+		employer = amram_gaon
+		effect = {
+			add_gold = 50
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+		    }
+			set_relation_friend = { reason = friend_generic_history target = character:shlomo_vanity }
+			set_relation_friend = { reason = friend_generic_history target = character:amram_gaon }
+		}
+	}
+	867.1.1 = {
+		effect = {
+			add_character_modifier = {
+				modifier = tournament_horse_race_winner_modifier
+			}
+		}
+	}
+	902.5.12 = {
+		death = yes
+	}
+}
+
+# ==== Gideon dynasty of Beta-Israel ==== #
+
+145646 = { #existing character - modified
+	name = "Dawit"
+	dynasty = 1022242
+	#dna = 01_gideon
+	religion = "haymanot"
+	culture = "ethiopian"
+	trait = education_martial_2
+	trait = stubborn
+	trait = paranoid
+	trait = patient
+	trait = physique_good_1
+	trait = disloyal
+	sexuality = heterosexual
+	martial = 6
+	diplomacy = 4
+	intrigue = 9
+	stewardship = 3
+	learning = 2
+	prowess = 7
+	father = 145645
+	834.1.1 = {
+		birth = "834.1.1"
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		}
+	}
+	889.1.1 = {
+		death = "889.1.1"
+	}
+}
+
+# ==== Unlanded Historical ==== #
+
+daud_merwan = { #David ibn Merwan al-Mukkamas https://en.wikipedia.org/wiki/David_ibn_Merwan_al-Mukkamas
+	name = "Da'ud ibn Marwan al-Muqamis"
+	culture = "bavlim"
+	religion = "karaism"
+	trait = education_learning_5
+	trait = eccentric
+	trait = humble
+	trait = zealous
+	trait = lifestyle_cantor_2
+	disallow_random_traits = yes
+	sexuality = heterosexual
+	martial = 3
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 4
+	learning = 9
+	prowess = 3
+	842.1.2 = {
+		birth = yes
+	}
+	864.1.1 = {
+		employer = 163133
+		effect = {
+			add_gold = 30
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+			learn_language = language_iranian
+		    }
+			add_prestige_level = 1
+			add_piety_level = 2
+		}
+	}
+	867.1.1 = {
+		effect = {
+			add_character_modifier = {
+				modifier = pilgrimage_sympathetic_towards_faiths_modifier
+			}
+		}
+	}
+	913.1.1 = {
+		employer = 90107 #this is not really meaningful but I need this kept here
+		move_to_pool = yes #Set him wandering free!
+	}
+	937.1.1 = {
+		death = yes
+	}
+}
+
+# ==== Ben David Karaite dynasty ==== #
+
+bavli_exilarch_0 = {
+	name = "Anan"
+	dynasty = 00280428
+	culture = "bavlim"
+	religion = "karaism"
+	trait = education_learning_5
+	trait = david
+	trait = lifestyle_cantor_3
+	
+	715.12.2 = {
+		birth = yes
+	}
+	798.5.12 = {
+		death = yes
+	}
+}
+
+bavli_exilarch_1 = {
+	name = "Shaul"
+	dynasty = 00280428
+	culture = "bavlim"
+	religion = "karaism"
+	trait = david
+	trait = lifestyle_cantor_1
+	
+	father = bavli_exilarch_0
+	
+	737.2.2 = {
+		birth = yes
+	}
+	799.11.10 = {
+		death = yes
+	}
+}
+
+bavli_exilarch_2 = {
+	name = "Yeoshiyahu"
+	dynasty = 00280428
+	culture = "bavlim"
+	religion = "karaism"
+	trait = david
+	trait = lifestyle_cantor_2
+	
+	father = bavli_exilarch_1
+	
+	768.1.5 = {
+		birth = yes
+	}
+	827.5.5 = {
+		death = yes
+	}
+}
+
+bavli_exilarch_3 = {
+	name = "Yehoshafat"
+	dynasty = 00280428
+	culture = "bavlim"
+	religion = "karaism"
+	trait = david
+	trait = lifestyle_cantor_2
+
+	father = bavli_exilarch_2
+	
+	790.3.1 = {
+		birth = yes
+	}
+	861.5.12 = {
+		death = yes
+	}
+}
+
+bavli_exilarch_4 = {
+	name = "Boaz"
+	dynasty = 00280428
+	culture = "bavlim"
+	religion = "karaism"
+	trait = education_learning_2
+	trait = stubborn
+	trait = humble
+	trait = patient
+	trait = david
+	trait = lifestyle_cantor_2
+	disallow_random_traits = yes
+	health = 4.5
+	martial = 4
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 3
+	
+	father = bavli_exilarch_3
+
+	811.2.2 = {
+		birth = yes
+	}
+	867.1.1 = {
+		employer = 34014
+		effect = {
+			root.dynasty = {
+				add_dynasty_prestige_level = 1	
+			}
+			add_piety_level = 1
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+		    }
+			add_gold = 340
+			set_relation_friend = { reason = friend_generic_history target = character:daud_merwan }
+		}
+	}
+	882.5.12 = {
+		death = yes
+	}
+}
+
+bavli_exilarch_4_brother = {
+	name = "Yoav"
+	dynasty = 00280428
+	culture = "bavlim"
+	religion = "karaism"
+	trait = education_martial_2
+	trait = david
+	
+	father = bavli_exilarch_3
+
+	821.2.2 = {
+		birth = yes
+	}
+	890.5.12 = {
+		death = yes
+	}
+}
+
+# ==== Iberian Jews - Individuals of Interest ==== #
+
+bodo_apostate = {
+	name = "Eleazar"
+	dynasty = apostate_1
+	#dna = 01_gaon
+	culture = "french"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = arrogant
+	trait = zealous
+	trait = fickle
+	trait = lifestyle_cantor_1
+	disallow_random_traits = yes
+	health = 5.5
+	martial = 3
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 5
+	learning = 3
+	prowess = 4
+
+	814.12.5 = {
+		birth = yes
+	}
+	839.1.1 = {
+		give_nickname = nick_the_apostate
+		effect = {
+			set_realm_capital = province:1932
+			add_gold = 50
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+			learn_language = language_latin
+		    }
+			add_piety_level = 1
+			spawn_army = {
+				name = event_troop_default_name
+				men_at_arms = {
+					type = temple_zealots
+					stacks = 1
+				}
+				location = province:1932
+				origin = province:1932 
+				inheritable = yes
+			}
+			if = {
+				limit = { has_realm_law = crown_authority_0 }
+				add_realm_law = crown_authority_1
+			}
+		}
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		}
+	}
+	871.1.1 = {
+		employer = 73839
+	}
+	876.1.1 = {
+		death = yes
+	}
+}

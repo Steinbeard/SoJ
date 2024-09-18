@@ -1,0 +1,37 @@
+﻿#halakha_government = {
+	primary_holding = church_holding
+	primary_heritages = { heritage_israelite }
+	
+	fallback = 2
+	
+	preferred_religions = { Judaism_religion }
+	create_cadet_branches = yes
+	rulers_should_have_dynasty = yes
+	royal_court = yes
+	legitimacy = no
+
+	valid_holdings = { church_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+
+	house_unity = clan_house_unity
+	tax_slot_type = clan_tax_slot
+
+	vassal_contract = {
+		special_contract
+		religious_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+		marriage_favor_rights
+		coinage_rights
+	}
+
+	ai = {
+		use_legends = yes
+	}
+
+	# Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).
+	flag = government_is_halakha
+	flag = can_designate_heirs
+	color = hsv{ 0.6 0.23 0.52 }
+#}

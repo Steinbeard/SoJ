@@ -1,0 +1,189 @@
+﻿@smCastleX = 0.27
+@smCastleY = 0.23
+@smLysX = 0.23
+@smLysY = 0.26
+@smCross = 0.22
+
+d_karaism = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_frame_circle_urnes_runes.dds"
+		color1 = "black"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.4 } scale = { 0.85 0.85 }  }
+	}
+	colored_emblem = {
+		texture = "ace_hebrew_kadesh_ya.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.4 } scale = { 0.6 0.6 }  }
+	}
+}
+
+c_tmutarakan = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_hexagram_khazaria.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.46 } scale = { 0.8 0.8 }  }
+	}
+}
+
+c_kashgar = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color3 = "black"
+		instance = { position = { 0.5 0.46 } scale = { 0.8 0.8 }  }
+	}
+}
+
+c_semien = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ace_six_stars.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.46 } scale = { 0.85 0.85 }  }
+	}
+	colored_emblem = {
+		texture = "ce_lion_passant.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "yellow"
+		instance = { position = { 0.5 0.48 } scale = { 0.5 0.5 }  }
+	}
+}
+
+c_debul = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	colored_emblem = {
+		texture = "ce_per_fess.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.46 } scale = { 0.55 0.55 }  }
+	}
+	colored_emblem = {
+		texture = "ce_religion_buddhism_generic.dds"
+		color1 = "purple"
+		instance = { position = { 0.5 0.46 } scale = { 0.5 0.5 }  }
+	}
+}
+
+d_sura_academy = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	colored_emblem = {
+		texture = "ce_border_circle_fimbriated.dds"
+		color1 = "purple"
+		color2 = "white"
+		instance = { position = { 0.5 0.46 } scale = { 0.72 0.72 }  }
+	}
+	colored_emblem = {
+		texture = "ce_religion_judaism_generic.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.45 } scale = { 0.6 0.6 }  }
+	}
+}
+
+d_kairouan_academy = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_border_circle_fimbriated.dds"
+		color1 = "white"
+		color2 = "purple"
+		instance = { position = { 0.5 0.46 } scale = { 0.72 0.72 }  }
+	}
+	colored_emblem = {
+		texture = "ce_religion_judaism_generic.dds"
+		color1 = "purple"
+		instance = { position = { 0.5 0.45 } scale = { 0.6 0.6 }  }
+	}
+}
+
+ho_hart_zealots_01 = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ace_hebrew_shmaisrael_rashi.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.6 } scale = { 0.45 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_religion_judaism_generic.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.22 } scale = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_bars_03.dds"
+		color1 = "black"
+		instance = { position = { 0.15 0.5 } scale = { 0.34 1 } rotation = -90 }
+		instance = { position = { 0.85 0.5 } scale = { 0.34 1 } rotation = -90 }
+	}
+	colored_emblem = {
+		texture = "ce_block_03.dds"
+		color1 = "black"
+		instance = { position = { 0.15 0.5 } scale = { 0.34 1 } rotation = -90 }
+		instance = { position = { 0.85 0.5 } scale = { 0.34 1 } rotation = -90 }
+	}
+}
+
+ho_hart_zealots_02 = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 94 141 185 }
+	colored_emblem = {
+		texture = "ace_hebrew_shmaisrael_guttmann.dds"
+		color1 = rgb { 1 1 1 }
+		instance = { position = { 0.5 0.46 } scale = { 0.2 0.2 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_khwarezmshah.dds"
+		color1 = rgb { 94 141 185 }
+		color2 = rgb { 1 1 1 }
+		instance = { position = { 0.5 0.47 } scale = { 0.55 0.55 }  }
+	}
+	colored_emblem = {
+		texture = "ce_bars_03.dds"
+		color1 = "white"
+		instance = { position = { 0.15 0.5 } scale = { 0.34 1 } rotation = -90 }
+		instance = { position = { 0.85 0.5 } scale = { 0.34 1 } rotation = -90 }
+	}
+	colored_emblem = {
+		texture = "ce_block_03.dds"
+		color1 = "white"
+		instance = { position = { 0.15 0.5 } scale = { 0.34 1 } rotation = -90 }
+		instance = { position = { 0.85 0.5 } scale = { 0.34 1 } rotation = -90 }
+	}
+}
+
+ho_hart_zealots_03 = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ace_hebrew_adonai.dds"
+		color1 = rgb { 1 1 1 }
+		instance = { position = { 0.5 0.48 } scale = { 0.6 0.6 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_06.dds"
+		color1 = rgb { 1 1 1 }
+		instance = { position = { 0.5 0.2 } scale = { 0.2 0.2 }  }
+	}
+	colored_emblem = {
+		texture = "ce_bars_03.dds"
+		color1 = "white"
+		instance = { position = { 0.15 0.5 } scale = { 0.34 1 } rotation = -90 }
+		instance = { position = { 0.85 0.5 } scale = { 0.34 1 } rotation = -90 }
+	}
+	colored_emblem = {
+		texture = "ce_block_03.dds"
+		color1 = "white"
+		instance = { position = { 0.15 0.5 } scale = { 0.34 1 } rotation = -90 }
+		instance = { position = { 0.85 0.5 } scale = { 0.34 1 } rotation = -90 }
+	}
+}

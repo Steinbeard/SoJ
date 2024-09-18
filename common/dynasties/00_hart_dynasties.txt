@@ -1,0 +1,189 @@
+﻿# Vanity dynasties #
+
+00280228 = {
+	name = "dynn_Raitan"
+	culture = "radhanite"
+	motto = dynn_du_welz_motto
+}
+
+# uncatogarized historical dynasties #
+
+apostate_1 = { #Bodo the apostate
+	name = "dynn_bodo"
+	culture = "french"
+	motto = dynn_blomberg_motto
+}
+
+# Fictional flavorful dynasties #
+
+00280328 = {
+	name = "dynn_Moshe"
+	culture = "kochinim"
+}
+
+00280128 = {
+	name = "dynn_Meir"
+	culture = "radhanite"
+	motto = dynn_Ribeiro_motto
+}
+
+00280028 = {
+	name = "dynn_Ovadiyah"
+	culture = "radhanite"
+	motto = dynn_Le_Jensen_motto
+}
+
+# Heads of Faith #
+
+00280428 = {	#Karite resh galuta family
+	name = "dynn_Ben_David"
+	culture = "bavlim"
+	motto = dynn_Leirnes_motto
+}
+
+# important Gaonim of Sura #
+
+bar_sheshna = {
+	name = "dynn_Sheshna"
+	culture = "bavlim"
+	motto = motto_not_vain
+}
+
+ben_tsadok = {
+	name = "dynn_Ben_Tsadok"
+	culture = "bavlim"
+}
+
+# important Gaonim of Kairouan #
+
+ben_elchanan = {
+	name = "dynn_Ben_Elchanan"
+	culture = "sephardi"
+}
+
+# historical Gaonim fillers #
+
+gaon_dyn_01 = {
+	name = "dynn_Abimai"
+	culture = "bavlim"
+}
+
+gaon_dyn_02 = {
+	name = "dynn_Boaz"
+	culture = "bavlim"
+}
+
+gaon_dyn_03 = {
+	name = "dynn_Hilai"
+	culture = "bavlim"
+}
+
+gaon_dyn_04 = {
+	name = "gaon_04"
+	culture = "bavlim"
+}
+
+gaon_dyn_05 = {
+	name = "gaon_05"
+	culture = "bavlim"
+}
+
+gaon_dyn_06 = {
+	name = "gaon_06"
+	culture = "bavlim"
+}
+
+gaon_dyn_07 = {
+	name = "gaon_07"
+	culture = "bavlim"
+}
+
+gaon_dyn_08 = {
+	name = "gaon_08"
+	culture = "bavlim"
+}
+
+gaon_dyn_09 = {
+	name = "gaon_09"
+	culture = "bavlim"
+}
+
+gaon_dyn_10 = {
+	name = "gaon_10"
+	culture = "bavlim"
+}
+
+gaon_dyn_11 = {
+	name = "gaon_11"
+	culture = "bavlim"
+}
+
+gaon_dyn_12 = {
+	name = "gaon_12"
+	culture = "bavlim"
+}
+
+gaon_dyn_13 = {
+	name = "gaon_13"
+	culture = "bavlim"
+}
+
+gaon_dyn_14 = {
+	name = "gaon_14"
+	culture = "bavlim"
+}
+
+gaon_dyn_15 = {
+	name = "gaon_15"
+	culture = "bavlim"
+}
+
+gaon_dyn_16 = {
+	name = "gaon_16"
+	culture = "bavlim"
+}
+
+gaon_dyn_17 = {
+	name = "gaon_17"
+	culture = "bavlim"
+}
+
+gaon_dyn_18 = {
+	name = "gaon_18"
+	culture = "bavlim"
+}
+
+gaon_dyn_19 = {
+	name = "gaon_19"
+	culture = "bavlim"
+}
+
+gaon_dyn_20 = {
+	name = "gaon_20"
+	culture = "bavlim"
+}
+
+gaon_dyn_21 = {
+	name = "gaon_21"
+	culture = "bavlim"
+}
+
+gaon_dyn_22 = {
+	name = "gaon_22"
+	culture = "bavlim"
+}
+
+gaon_dyn_23 = {
+	name = "gaon_23"
+	culture = "bavlim"
+}
+
+gaon_dyn_24 = {
+	name = "gaon_24"
+	culture = "bavlim"
+}
+
+gaon_dyn_25 = {
+	name = "gaon_25"
+	culture = "bavlim"
+}

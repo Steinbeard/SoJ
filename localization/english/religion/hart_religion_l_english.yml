@@ -1,0 +1,20 @@
+﻿l_english:
+
+ #Holy Sites: Judaism
+
+ holy_site_tmutarakan_name:0 "Kuzarite Talmud School"
+ holy_site_tmutarakan_effect_name:0 "From [holy_site|E] #weak ($holy_site_tmutarakan_name$)#!"
+ holy_site_bukhara_name:0 "Bukharan Jewish Quarter"
+ holy_site_bukhara_effect_name:0 "From [holy_site|E] #weak ($holy_site_bukhara_name$)#!"
+ holy_site_kairouan_name:0 "Talmudic Academies of Kairouan"
+ holy_site_kairouan_effect_name:0 "From [holy_site|E] #weak ($holy_site_bukhara_name$)#!"
+ holy_site_babylon_real_name:0 "Talmudic Academies of Babylon"
+ holy_site_babylon_real_effect_name:0 "From [holy_site|E] #weak ($holy_site_babylon_real_name$)#!"
+ holy_site_jerusalem_real_name:0 "Temple Mount"
+ holy_site_jerusalem_real_effect_name:0 "From [holy_site|E] #weak ($holy_site_bukhara_name$)#!"
+ holy_site_sufed_real_name:0 "Tzfat Kabbalist Circles"
+ holy_site_sufed_real_effect_name:0 "From [holy_site|E] #weak ($holy_site_bukhara_name$)#!"
+ holy_site_sinai_real_name:0 "The Burning Bush"
+ holy_site_sinai_real_effect_name:0 "From [holy_site|E] #weak ($holy_site_bukhara_name$)#!"
+ holy_site_ben_ezra_name:0 "Ben Ezra Synagogue"
+ holy_site_ben_ezra_effect_name:0 "From [holy_site|E] #weak ($holy_site_bukhara_name$)#!"

@@ -1,0 +1,137 @@
+﻿d_karaism = { # Ben David dynasty
+	739.12.2 = {
+		liege = "e_arabia"
+		holder = bavli_exilarch_0
+	}
+	798.5.12 = {
+		liege = "e_arabia"
+		holder = bavli_exilarch_1
+	}
+	799.11.10 = {
+		liege = "e_arabia"
+		holder = bavli_exilarch_2
+	}
+	827.5.5 = {
+		liege = "e_arabia"
+		holder = bavli_exilarch_3
+	}
+	861.5.12 = {
+		liege = "e_arabia"
+		holder = bavli_exilarch_4
+	}
+	882.5.12 = {
+		holder = 0
+	}
+}
+
+d_sura_academy = { # geonate of Sura
+	552.1.12 = {
+		holder = 25_gaon
+	}
+	591.1.1 = {
+		holder = 24_gaon
+	}
+	610.1.1 = {
+		liege = "e_arabia"
+		holder = 23_gaon
+	}
+	650.1.1 = {
+		holder = 22_gaon
+	}
+	670.1.1 = {
+		holder = 21_gaon
+	}
+	694.1.1 = {
+		holder = 20_gaon
+	}
+	712.1.1 = {
+		holder = 19_gaon
+	}
+	730.1.1 = {
+		holder = 18_gaon
+	}
+	748.1.1 = {
+		holder = 17_gaon
+	}
+	756.1.1 = {
+		holder = 16_gaon
+	}
+	756.12.12 = {
+		holder = 15_gaon
+	}
+	761.1.1 = {
+		holder = 14_gaon
+	}
+	769.1.1 = {
+		holder = 13_gaon
+	}
+	774.1.1 = {
+		holder = 12_gaon
+	}
+	778.1.1 = {
+		holder = 11_gaon
+	}
+	789.1.1 = {
+		holder = 10_gaon
+	}
+	798.1.1 = {
+		holder = 09_gaon
+	}
+	798.12.12 = {
+		holder = 08_gaon
+	}
+	810.1.1 = {
+		holder = 07_gaon
+	}
+	812.1.1 = {
+		holder = 06_gaon
+	}
+	816.1.1 = {
+		holder = 05_gaon
+	}
+	820.1.1 = {
+		holder = 04_gaon
+	}
+	832.1.12 = {
+		liege = "e_arabia"
+		holder = 03_gaon
+	}
+	843.1.12 = {
+		holder = 02_gaon
+	}
+	853.1.12 = {
+		holder = 01_gaon
+	}
+	861.1.1 = {
+		holder = amram_gaon
+		succession_laws = {
+			halakha_elective_succession_law
+		}
+	}
+	875.10.12 = {
+		holder = ben_zadok_gaon
+	}
+	882.8.4 = {
+		holder = ben_zadok_gaon_1
+	}
+	902.1.1 = {
+		holder = 0
+	}
+}
+
+d_kairouan_academy = { # geonate of kairouan
+	865.1.1 = {
+		liege = "k_africa"
+		holder = elhanan_gaon
+		government = feudal_government
+		succession_laws = {
+			halakha_elective_succession_law
+		}
+	}
+	901.12.22 = {
+		holder = chushiel_gaon
+	}
+	882.8.4 = {
+		holder = 0
+	}
+}

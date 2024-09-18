@@ -1,0 +1,15 @@
+﻿hart_judaism_relic_template = {
+	can_equip = {
+		always = yes
+	}
+
+	can_benefit = {
+		judaism_or_syncretic_with_judaism_trigger = { CHARACTER = root }
+	}
+
+	fallback = {
+		learning = 1
+	}
+
+	unique = yes
+}

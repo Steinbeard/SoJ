@@ -1,0 +1,16 @@
+﻿l_english:
+ #Reasons
+
+ #Cultural MaA
+ judean_slingers:0 "Judean Slingers"
+ temple_zealots:0 "Judaic Militia"
+ armed_traders:0 "Caravan Guards"
+ temple_knights:0 "Temple Sergeants"
+
+ #MaA Descriptions
+
+ temple_zealots_flavor:0 "#F A militia enforcing Halachic law and defending the Jewish community, they are equipped with simple tunics and maces.#!"
+ judean_slingers_flavor:0 "#F Devoted to ancient jewish tradition, these Judeans learn warcraft and Torah in caves, secretly and fight their enemies most expertly in the desert.#!"
+ armed_traders_flavor:0 "#F Traders trained in horseback archery and armed with heavy eastern armor, they are the mobile defense of the Radhanites.#!"
+ temple_knights_flavor:0 "#F Clad in heavy armor, temple robes and mounted on fine Arabian steeds these sergeants are indeed the finest warriors on the battlefield.#!"
+ 

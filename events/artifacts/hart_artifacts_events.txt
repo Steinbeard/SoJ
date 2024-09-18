@@ -1,0 +1,18 @@
+﻿namespace = hart_historical_artifacts
+# Generation of historical artifacts #
+
+#Historical artifacts generator at game start
+hart_historical_artifacts.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		### Sura Academy Siddur
+		if = {
+			limit = { exists = title:d_sura_academy.holder }
+			title:d_sura_academy.holder = {
+				create_artifact_seder_amram_effect = { OWNER = this }
+			}
+		}
+	}
+}

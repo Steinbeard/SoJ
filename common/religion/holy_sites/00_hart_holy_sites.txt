@@ -1,0 +1,91 @@
+﻿#############
+# Judaism	#
+#############
+
+
+babylon_real = { # Babylon was very important in early Judaism, where the Babylonian Talmud was written
+	county = c_iskaf
+	barony = b_humaniya
+
+	character_modifier = {
+		name = holy_site_babylon_real_effect_name
+		cultural_head_fascination_mult = 0.15
+		monthly_lifestyle_xp_gain_mult = 0.20
+	}
+}
+
+bukhara = { # Bukhara serves as a big hub for jewish communities in central asia
+	county = c_bukhara
+	barony = b_bukhara
+
+	character_modifier = {
+		name = holy_site_bukhara_effect_name
+		stewardship_per_piety_level = 1
+		different_culture_opinion = 10
+	}
+}
+
+kairouan = { # Kairouan was very important as it served as a seat of an important yeshiva in the west
+	county = c_kairwan
+	barony = b_kairouan
+
+	character_modifier = {
+		name = holy_site_bukhara_effect_name
+		cultural_head_fascination_mult = 0.10
+		monthly_lifestyle_xp_gain_mult = 0.05
+		stewardship_per_piety_level = 1
+	}
+}
+
+tmutarakan = { #Major Radhanite settlement on the Steppe
+	county = c_tmutarakan
+	barony = b_tmutarakan
+
+	character_modifier = {
+		name = holy_site_tmutarakan_effect_name
+		world_steppe_development_growth_factor = 0.25 #Make the steppe suck less
+		steppe_development_growth_factor = 0.15 #Make steppe terrain suck even more lesserer
+	}
+}
+
+jerusalem_real = {
+	county = c_jerusalem
+	
+	character_modifier = {
+		name = holy_site_jerusalem_effect_name
+		monthly_prestige_gain_mult = 0.2
+		same_faith_opinion = 10
+	}
+	flag = jerusalem_conversion_bonus # +20% County Conversion
+}
+
+sufed_real = {
+	county = c_acre
+
+	character_modifier = {
+		name = holy_site_sufed_real_effect_name
+		personal_scheme_power_mult = 0.1
+		learning_per_piety_level = 1
+		intrigue = 1
+	}
+}
+
+ben_ezra = {
+	county = c_cairo
+
+	character_modifier = {
+		name = holy_site_ben_ezra_effect_name
+		learning = 1
+		stewardship = 1
+	}
+}
+
+sinai_real = {
+	county = c_sinai
+
+	character_modifier = {
+		name = holy_site_sinai_real_effect_name
+		desert_mountains_advantage = 5
+		learning = 1
+	}
+}

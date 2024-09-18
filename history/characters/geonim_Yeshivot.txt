@@ -1,0 +1,795 @@
+﻿# ======== Important figures and their associates ======== #
+
+
+# ==== Sura ==== #
+
+amram_gaon = {
+	name = "Amram"
+	dynasty = bar_sheshna
+	dna = 01_gaon
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_5
+	trait = diligent
+	trait = humble
+	trait = calm
+	trait = shrewd
+	trait = lifestyle_cantor_3
+	disallow_random_traits = yes
+	health = 6.5
+	martial = 2
+	diplomacy = 1
+	intrigue = 3
+	stewardship = 2
+	learning = 1
+	prowess = 5
+
+	805.1.12 = {
+		birth = yes
+	}
+	836.1.1 = {
+		add_spouse = amram_gaon_wife
+		effect = {
+			set_relation_soulmate = { target = character:amram_gaon_wife }
+		}
+	}
+	866.1.1 = {
+		effect = {
+			set_realm_capital = province:4824
+			add_gold = 220
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+			learn_language = language_greek
+			learn_language = language_iranian
+		    }
+			add_prestige_level = 2
+			add_piety_level = 3
+			root.dynasty = {
+				add_dynasty_prestige_level = 2	
+				add_dynasty_prestige = 1000
+			}
+			spawn_army = {
+				name = event_troop_default_name
+				men_at_arms = {
+					type = temple_zealots
+					stacks = 2
+				}
+				men_at_arms = {
+					type = temple_zealots
+					stacks = 2
+				}
+				location = province:4824
+				origin = province:4824 
+				inheritable = yes
+			}
+			if = {
+				limit = { has_realm_law = crown_authority_0 }
+				add_realm_law = crown_authority_1
+			}
+		}
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_fp3_dlc_trigger = yes }
+				# Known enlightened centrist supports the status quo.
+				add_trait = fp3_struggle_supporter
+			}
+		}
+		effect = {
+			add_character_modifier = {
+				modifier = pilgrimage_sympathetic_towards_faiths_modifier
+			}
+		}
+	}
+	875.10.12 = {
+		death = yes
+	}
+}
+
+amram_gaon_wife = {
+	female = yes
+	name = "Devorah"
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_stewardship_2
+
+	813.1.1 = {
+		birth = yes
+	}
+	876.1.1 = {
+		death = yes
+	}
+}
+
+amram_gaon_son = {
+	name = "Avshalom"
+	dynasty = bar_sheshna
+	#dna = 01_gaon
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = just
+	trait = humble
+	trait = impatient
+	trait = lifestyle_cantor_2
+	disallow_random_traits = yes
+	martial = 4
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 3
+	learning = 4
+	prowess = 7
+	father = amram_gaon
+	mother = amram_gaon_wife
+
+	836.1.12 = {
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+			learn_language = language_greek
+		    }
+		}
+		effect = {
+			add_character_modifier = {
+				modifier = pilgrimage_sympathetic_towards_faiths_modifier
+			}
+		}
+	}
+	902.10.12 = {
+		death = yes
+	}
+}
+
+ben_zadok_gaon = {
+	name = "Nachshon"
+	dynasty = ben_tsadok
+	#dna = 01_gaon
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = just
+	trait = humble
+	trait = zealous
+	trait = lifestyle_cantor_2
+	disallow_random_traits = yes
+	health = 5.5
+	martial = 3
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 4
+	learning = 3
+	prowess = 5
+
+	816.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = amram_gaon
+		effect = {
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+		    }
+			add_prestige_level = 1
+			add_piety_level = 2
+		}
+	}
+	875.10.11 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		}
+	}
+	882.8.4 = {
+		death = yes
+	}
+}
+
+ben_zadok_gaon_1 = {
+	name = "Hai"
+	dynasty = ben_tsadok
+	#dna = 01_gaon
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_diplomacy_4
+	trait = arrogant
+	trait = calm
+	trait = zealous
+	trait = lifestyle_cantor_1
+	father = ben_zadok_gaon
+	disallow_random_traits = yes
+	martial = 3
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 6
+	learning = 3
+	prowess = 5
+
+	840.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = amram_gaon
+		effect = {
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+		    }
+			add_piety_level = 1
+		}
+	}
+	882.8.4 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		}
+	}
+	902.12.4 = {
+		death = yes
+	}
+}
+
+
+# ==== Kairouan ==== #
+
+elhanan_gaon = {
+	name = "El'Chanan"
+	dynasty = ben_elchanan
+	#dna = 01_gaon
+	culture = "sephardi"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = impatient
+	trait = zealous
+	trait = temperate
+	trait = lifestyle_cantor_1
+	disallow_random_traits = yes
+	health = 3.8
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	learning = 4
+	prowess = 5
+
+	828.8.22 = {
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+			set_realm_capital = province:4594
+			add_gold = 150
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+			learn_language = language_aramaic
+		    }
+			add_prestige_level = 1
+			add_piety_level = 1
+			spawn_army = {
+				name = event_troop_default_name
+				men_at_arms = {
+					type = temple_zealots
+					stacks = 2
+				}
+				location = province:4594
+				origin = province:4594 
+				inheritable = yes
+			}
+			if = {
+				limit = { has_realm_law = crown_authority_0 }
+				add_realm_law = crown_authority_1
+			}
+		}
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+		}
+	}
+	901.12.22 = {
+		death = yes
+	}
+}
+
+chushiel_gaon = {
+	name = "Chushiel"
+	dynasty = ben_elchanan
+	#dna = 01_gaon
+	culture = "sephardi"
+	religion = "rabbinism"
+	trait = education_learning_5
+	trait = generous
+	trait = honest
+	trait = compassionate
+	trait = shrewd
+	trait = lifestyle_cantor_3
+	disallow_random_traits = yes
+	health = 6
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 4
+	learning = 2
+	prowess = 5
+	father = elhanan_gaon
+
+	847.1.5 = {
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+		    if = {
+			limit = {
+				has_fp2_dlc_trigger = yes
+			}
+			learn_language = language_arabic
+		    }
+			add_piety_level = 1
+		}
+	}
+	937.12.22 = {
+		death = yes
+	}
+}
+
+# ======== Historical geonim fillers ======== #
+
+
+# ==== Sura ==== #
+
+25_gaon = {
+	name = "Mar"
+	dynasty = gaon_dyn_25
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_5
+	trait = intellect_good_3
+	trait = theologian
+	trait = lifestyle_cantor_2
+
+	502.1.1 = {
+		birth = yes
+	}
+	591.1.1 = {
+		death = yes
+	}
+}
+
+24_gaon = {
+	name = "Hanania"
+	dynasty = gaon_dyn_24
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = theologian
+	trait = lifestyle_cantor_1
+
+	518.1.1 = {
+		birth = yes
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+
+23_gaon = {
+	name = "Honai"
+	dynasty = gaon_dyn_23
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = theologian
+	trait = scholar
+	trait = lifestyle_cantor_3
+
+	564.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+22_gaon = {
+	name = "Sheshna"
+	dynasty = bar_sheshna
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = shrewd
+	trait = lifestyle_cantor_3
+
+	599.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+21_gaon = {
+	name = "Hanania"
+	dynasty = gaon_dyn_21
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = shrewd
+	trait = lifestyle_cantor_2
+
+	640.1.1 = {
+		birth = yes
+	}
+	694.1.1 = {
+		death = yes
+	}
+}
+
+20_gaon = {
+	name = "Hilai"
+	dynasty = gaon_dyn_20
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = intellect_good_1
+	trait = lifestyle_cantor_1
+
+	643.1.1 = {
+		birth = yes
+	}
+	712.1.1 = {
+		death = yes
+	}
+}
+
+19_gaon = {
+	name = "Ya'aqub"
+	dynasty = gaon_dyn_19
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = scholar
+	trait = lifestyle_cantor_2
+
+	668.1.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		death = yes
+	}
+}
+
+18_gaon = {
+	name = "Shmu'El"
+	dynasty = gaon_dyn_18
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_5
+	trait = shrewd
+	trait = lifestyle_cantor_3
+
+	688.1.1 = {
+		birth = yes
+	}
+	748.1.1 = {
+		death = yes
+	}
+}
+
+17_gaon = {
+	name = "Meri"
+	dynasty = gaon_dyn_17
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = theologian
+	trait = scholar
+	trait = lifestyle_cantor_2
+
+	701.1.1 = {
+		birth = yes
+	}
+	756.1.1 = {
+		death = yes
+	}
+}
+
+16_gaon = {
+	name = "Ahai"
+	dynasty = gaon_dyn_16
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = intellect_good_3
+	trait = administrator
+	trait = scholar
+	trait = lifestyle_cantor_3
+
+	669.1.1 = {
+		birth = yes
+	}
+	756.12.12 = {
+		death = yes
+	}
+}
+
+15_gaon = {
+	name = "Yehudai"
+	dynasty = gaon_dyn_15
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = scholar
+	trait = lifestyle_cantor_1
+
+	706.1.1 = {
+		birth = yes
+	}
+	761.1.1 = {
+		death = yes
+	}
+}
+
+14_gaon = {
+	name = "Ahonai Kahana"
+	dynasty = gaon_dyn_14
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = theologian
+	trait = lifestyle_cantor_1
+
+	700.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		death = yes
+	}
+}
+
+13_gaon = {
+	name = "Haninai Kahana"
+	dynasty = gaon_dyn_13
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = shrewd
+	trait = lifestyle_cantor_2
+
+	713.1.1 = {
+		birth = yes
+	}
+	774.1.1 = {
+		death = yes
+	}
+}
+
+12_gaon = {
+	name = "Meri Ha-Levi"
+	dynasty = gaon_dyn_12
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = administrator
+	trait = lifestyle_cantor_3
+
+	715.1.1 = {
+		birth = yes
+	}
+	778.1.1 = {
+		death = yes
+	}
+}
+
+11_gaon = {
+	name = "Bebai Ha-Levi"
+	dynasty = gaon_dyn_11
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_5
+	trait = intellect_good_2
+	trait = lifestyle_cantor_3
+
+	722.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+10_gaon = {
+	name = "Hilai"
+	dynasty = gaon_dyn_10
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = intellect_good_1
+	trait = lifestyle_cantor_3
+
+	722.1.1 = {
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+
+09_gaon = {
+	name = "Ya'aqub"
+	dynasty = gaon_dyn_09
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = administrator
+	trait = scholar
+	trait = theologian
+	trait = lifestyle_cantor_1
+
+	731.1.1 = {
+		birth = yes
+	}
+	798.12.12 = {
+		death = yes
+	}
+}
+# connect above and below - Abimai is Yaaqub's uncle ########
+08_gaon = {
+	name = "Abimai"
+	dynasty = gaon_dyn_09
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = shrewd
+	trait = lifestyle_cantor_2
+
+	712.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+07_gaon = {
+	name = "Tsadok"
+	dynasty = gaon_dyn_07
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = shrewd
+	trait = lifestyle_cantor_2
+
+	737.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+
+06_gaon = {
+	name = "Hilai"
+	dynasty = gaon_dyn_06
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_5
+	trait = scholar
+	trait = lifestyle_cantor_3
+
+	747.1.1 = {
+		birth = yes
+	}
+	816.1.1 = {
+		death = yes
+	}
+}
+
+05_gaon = {
+	name = "Kimoi"
+	dynasty = gaon_dyn_07
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = shrewd
+	trait = lifestyle_cantor_1
+
+	755.7.7 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+04_gaon = {
+	name = "Musa"
+	dynasty = gaon_dyn_04
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_3
+	trait = intellect_good_1
+	trait = lifestyle_cantor_3
+
+	760.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+#######################
+
+03_gaon = {
+	name = "Cohen Tzedek"
+	dynasty = gaon_dyn_01
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = lifestyle_cantor_2
+
+	776.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+}
+
+02_gaon = {
+	name = "Sar Shalom"
+	dynasty = gaon_dyn_02
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = lifestyle_cantor_2
+
+	781.1.1 = {
+		birth = yes
+	}
+	853.1.1 = {
+		death = yes
+	}
+}
+
+01_gaon = { #Predecessor for Amram Gaon
+	name = "Natronai"
+	dynasty = gaon_dyn_03
+	culture = "bavlim"
+	religion = "rabbinism"
+	trait = education_learning_4
+	trait = shrewd
+	trait = lifestyle_cantor_2
+
+	792.1.1 = {
+		birth = yes
+	}
+	861.1.1 = {
+		death = yes
+	}
+}

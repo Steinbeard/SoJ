@@ -1,0 +1,123 @@
+﻿# Standard Values
+@pos_compat_high = 30
+@pos_compat_medium = 15
+@pos_compat_low = 5
+
+@neg_compat_high = -30
+@neg_compat_medium = -15
+@neg_compat_low = -5
+
+
+david = {
+	category = fame
+	
+	courtier_and_guest_opinion = 15
+	flag = initial_legitimacy_boost
+	
+	ruler_designer_cost = 25
+	# Loc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_david_desc
+			}
+			desc = trait_david_character_desc
+		}
+	}
+	
+	inherit_chance = 100
+	parent_inheritance_sex = all
+	inherit_from_real_father = no
+}
+
+#Cantor 3 ranks
+lifestyle_cantor_3 = {
+	category = lifestyle
+	icon = cantor_3.dds
+	
+	learning = 1
+	diplomacy = 1
+	judaism_religion_opinion = 5
+	stress_gain_mult = -0.1
+	
+	ruler_designer_cost = 50
+
+	# Loc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = lifestyle_cantor_3_desc
+			}
+			desc = lifestyle_cantor_3_character_desc
+		}
+	}
+
+	ai_zeal = 30
+
+	# AI Values
+	ai_rationality = 10
+
+}
+lifestyle_cantor_2 = {
+	category = lifestyle
+	icon = cantor_2.dds
+	
+	learning = 1
+	diplomacy = 1
+	stress_gain_mult = -0.1
+	
+	ruler_designer_cost = 30
+
+	# Loc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = lifestyle_cantor_2_desc
+			}
+			desc = lifestyle_cantor_2_character_desc
+		}
+	}
+
+	ai_zeal = 30
+
+	# AI Values
+	ai_rationality = 10
+
+}
+lifestyle_cantor_1 = {
+	category = lifestyle
+	icon = cantor_1.dds
+	
+	learning = 1
+	stress_gain_mult = -0.05
+	
+	ruler_designer_cost = 15
+
+	# Loc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = lifestyle_cantor_1_desc
+			}
+			desc = lifestyle_cantor_1_character_desc
+		}
+	}
+
+	ai_zeal = 30
+
+	# AI Values
+	ai_rationality = 10
+
+}

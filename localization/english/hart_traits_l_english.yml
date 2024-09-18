@@ -1,0 +1,38 @@
+﻿l_english:
+ TRAIT_LEVEL_TRACK_ENTRY_DESC_BASE:0 "Requires [TraitLevelTrackEntry.GetXpRequired|V0]+ [trait_level_track_xp|E]\n[TraitLevelTrackEntry.GetModifierDescription( Character.Self )][AddLocalizationIf( GreaterThan_int32( TraitLevelTrackEntry.GetLevel, '(int32)1' ), 'MODIFIER_PREVIOUS_LEVELS_APPLY_NEWLINE' )]"
+ TRAIT_LEVEL_TRACK_ENTRY_DESC:2 "#V Level [TraitLevelTrackEntry.GetLevel]#!\n$TRAIT_LEVEL_TRACK_ENTRY_DESC_BASE$"
+ TRAIT_LEVEL_TRACK_ENTRY_DESC_TT:0 "\n\n#S Level [TraitLevelTrackEntry.GetLevel]#!\n$TRAIT_LEVEL_TRACK_ENTRY_DESC_BASE$"
+ TRAIT_LEVEL_TRACK_TT:2 "#T [TraitLevelTrack.GetName]#!\nCurrent Level: [Character.GetTraitTrackLevel( Trait.Self, TraitLevelTrack.Self )|V] #weak ([ComplexBar.GetCurrentValue] [trait_level_track_xp|E])#!\n#flavor [TraitLevelTrack.GetDescription]#![AddLocalizationIf( GreaterThan_int32( TraitLevelTrackEntry.GetLevel, '(int32)0' ), 'TRAIT_LEVEL_TRACK_ENTRY_DESC_TT' )]"
+ TRAIT_LEVEL_TRACK_SHORT_TT:0 "#T [TraitLevelTrack.GetName] [Trait.GetName( Character.Self )]#!\n#flavor [TraitLevelTrack.GetDescription]#!"
+ TRAIT_LEVEL_TRACK_PROGRESS_TOOTLIP:0 "#T [TraitLevelTrack.GetName]#!\nCurrent [trait_level_track_xp|E]: [ComplexBar.GetNextValue|0V]\n#flavor [TraitLevelTrack.GetDescription]#!"
+ TRAIT_LEVEL_TRACKS_HEADER:0 "[Trait.GetNameNoTooltipWithDefault( Character.Self )] [trait_level_track|E]"
+ TRAIT_LEVEL_TRACK_HEADER:0 "#V #bold [TraitLevelTrack.GetName]#!#!\n#flavor [TraitLevelTrack.GetDescription]#!\n"
+
+#Reasons
+ ALREADY_CONTAINTS_TRAIT:2 "@warning_icon! #X $CHARACTER_NAME$ already has the trait [TRAIT.GetName( CHARACTER.Self )]#!"
+ CONTAINTS_OPPOSITE_TRAIT:2 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the opposite trait [TRAIT_2.GetName( CHARACTER.Self )]#!"
+ IS_POTENTIAL_TRAIT_FALSE:2 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is blocked from possessing it#!"
+ TRAIT_AGE_NOT_IN_RANGE_TOO_YOUNG:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is younger than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
+ TRAIT_AGE_NOT_IN_RANGE_TOO_OLD:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is older than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
+ TRAIT_SEX_NOT_MATCHING:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is not $TRAIT_SEX$#!"
+ ALREADY_HAS_TRAIT_IN_GROUP:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the a trait in the [TRAIT_GROUP.GetName] group #weak ([TRAIT_2.GetName( CHARACTER.Self )])#!#!"
+ SEX_MALE:0 "Male"
+ SEX_FEMALE:0 "Female"
+
+ 	#Beit David desc
+ trait_david:0 "Beit David"
+ trait_david_desc:1 "This character claims their ancestry from the biblical house of King David."
+ trait_david_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] claims their ancestry from the biblical house of King David."
+
+ 	#cantor desc
+ trait_lifestyle_cantor_3:0 "Celestial Orator"
+ lifestyle_cantor_3_desc:1 "Legend says sermons led by this character breach the skies; and his sung words are woven with divinity."
+ lifestyle_cantor_3_character_desc:0 "Legend says [ROOT.GetCharacter.GetFirstNameNoTooltip]'s sermons breach the skies and his sung words are woven with divinity."
+
+ trait_lifestyle_cantor_2:0 "Expert Cantor"
+ lifestyle_cantor_2_desc:1 "Sermons led by this character are a delight to take part in, every homily is eloquent and compelling."
+ lifestyle_cantor_2_character_desc:0 "Sermons led by [ROOT.GetCharacter.GetFirstNameNoTooltip] are a delight to take part in, every homily is eloquent and compelling."
+
+ trait_lifestyle_cantor_1:0 "Adept Worshiper"
+ lifestyle_cantor_1_desc:1 "This character can lead a sermon like any other member of his congregation; nothing worthy of fame."
+ lifestyle_cantor_1_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] can lead a sermon like any other member of his congregation; nothing worthy of fame."

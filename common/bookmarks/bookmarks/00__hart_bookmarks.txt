@@ -1,0 +1,177 @@
+﻿bm_867_jewish = {
+	start_date = 867.1.1
+	recommended = yes
+	is_playable = yes
+	group = bm_group_867
+
+	weight = {
+		value = 90
+	}
+
+	# Mordechai Ovadiyah ID: mordechai_radhanite
+	character = {
+		name = "bookmark_jewish_mordechai"
+		dynasty = 00280028
+		dynasty_splendor_level = 2
+		type = male
+		birth = 845.1.2
+		title = c_tmutarakan
+		government = feudal_government
+		culture = radhanite
+		religion = rabbinism 
+		history_id = 74025 
+        weight = {
+            base = 0
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:bookmark_jewish_mordechai
+                this = character:bookmark_jewish_mordechai
+            }
+        }
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 440 270 }
+		
+		animation = flirtation_left
+
+		# ---
+		character = {
+			name = "bookmark_jewish_mordechai_liege"
+			relation = "BOOKMARK_RELATION_LIEGE"
+			dynasty = 12270
+			type = male
+			birth = 838.1.1
+			culture = khazar
+			religion = kabarism
+			history_id = 74025
+			animation = personality_greedy
+		}
+	}
+
+	# Amram Gaon ID: amram_gaon
+	character = {
+		name = "bookmark_jewish_gaon"
+		dynasty = bar_sheshna
+		dynasty_splendor_level = 3
+		type = male
+		birth = 805.1.12
+		title = d_sura_academy
+		government = feudal_government
+		culture = bavlim
+		religion = rabbinism 
+		history_id = amram_gaon 
+        weight = {
+            base = 0
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:amram_gaon
+                this = character:amram_gaon
+            }
+        }
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 455 730 }
+		
+		animation = personality_honorable
+
+		# The Caliph Al-Mu'tazz, liege lord, ID: 34014
+		character = {
+			name = "bookmark_persia_muhammad_ibn_abdallah_alt_caliph"
+			relation = "BOOKMARK_RELATION_LIEGE"
+			dynasty_house = house_abbasid
+			type = male
+			birth = 847.1.1
+			culture = levantine
+			religion = ashari
+			history_id = 34014
+			animation = personality_compassionate 
+		}
+	}
+
+	# Shlomo Raitan ID: shlomo_vanity
+	character = {
+		name = "bookmark_jewish_shlomo"
+		dynasty = 00280228
+		dynasty_splendor_level = 2
+		type = male
+		birth = 831.2.2
+		title = c_kashgar
+		government = feudal_government
+		culture = radhanite
+		religion = merkabah 
+		history_id = 74025 
+        weight = {
+            base = 0
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:bookmark_jewish_shlomo
+                this = character:bookmark_jewish_shlomo
+            }
+        }
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 970 160 }
+		
+		animation = war_over_win
+
+	}
+
+	# Kochinman ID: shemaya_kochin
+	character = {
+		name = "bookmark_jewish_kochinim"
+		dynasty = 00280328
+		dynasty_splendor_level = 1
+		type = male
+		birth = 842.11.2
+		title = c_debul
+		government = feudal_government
+		culture = kochinim
+		religion = malabarism 
+		history_id = shemaya_kochin 
+        weight = {
+            base = 0
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:bookmark_jewish_kochinim
+                this = character:bookmark_jewish_kochinim
+            }
+        }
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 930 570 }
+		
+		animation = frontend_right_idle
+
+	}
+
+	# ---
+	character = {
+		name = "bookmark_jewish_gideon"
+		dynasty = 1022242
+		dynasty_splendor_level = 1
+		type = male
+		birth = 834.1.1
+		title = c_semien
+		government = feudal_government
+		culture = ethiopian
+		religion = haymanot
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = 145646
+		position = { 1777 1699 }
+		
+		animation = war_attacker
+
+		# ---
+		character = {
+			name = "bookmark_jewish_gideon_alt"
+			relation = "BOOKMARK_RELATION_LIEGE" #enemy change
+			dynasty = 7246
+			type = male
+			birth = 840.1.1
+			culture = ethiopian
+			religion = coptic
+			history_id = 32225
+			animation = dismissal
+		}
+	}	
+}

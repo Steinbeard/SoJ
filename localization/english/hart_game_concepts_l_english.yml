@@ -1,0 +1,28 @@
+﻿l_english:
+ 
+ game_concept_house_unity_desc: "$game_concept_house_unity$ represents the state of internal relationships within a [halakha|E] and [clan|E] [houses|E], and the attitude members have towards each other.\n\nThere are several [house_unity_levels|E], which provides the members of a House with various benefits and penalties.\n\n$game_concept_house_unity$ changes depending on the actions House members take towards one another. [house_unity_unifying_actions|E] will generally increase $game_concept_house_unity$, while [house_unity_devisive_actions|E] will decrease it. The [house_head|E] generally have a greater degree of influence over their House's $game_concept_unity$."
+
+ game_concept_halakha:0 "Halakha"
+ game_concept_halakhos: "Halakhos"
+ game_concept_halakha_government:0 "Halachic Government"
+ game_concept_halakha_desc:1 "Halachic governments are a [government_form|E] in which the amount of [levies|E] and [taxes|E] given to a [liege|E] by their [vassals|E] is determined by the [aptitude|E] of said Liege's [tax_collector|E]. Halakha also make use of [house_unity|E]."
+
+ game_concept_government_desc:2 "A [ruler|E]'s $game_concept_government_form$ determines what kind of [laws|E] they have access to as well as what [obligations|E] they have to their [liege|E] if they are not [independent|E].\n\nThe Government forms are: [feudal|E], [tribal|E], [halakha|E], [clan|E], [theocracy|E] and [republic|E]."
+
+ game_concept_castle_holding_desc:0 "Castles are the most heavily fortified [holding_type|E] and the standard type for [feudal|E], [clan|E], [halakha|E] and [tribal|E] [rulers|E], as well as [holy_orders|E]. They tend to provide more [levies|E] than [taxes|E]."
+ game_concept_temple_holding_desc:0 "Temples are a [holding_type|E] that can be held by members of the [clergy|E] as [church_property|E] (the [theocratic|E] [government_form|E]). However, in [faiths|E] with the [GetFaithDoctrine('doctrine_theocracy_lay_clergy').GetBaseName] [doctrine|E], anyone can hold Temples without penalty.\n\nTemples provide a fairly even mix of [levies|E] and [taxes|E]." #remeber this lay clergy
+
+ game_concept_tax_jurisdiction_desc: "A $game_concept_tax_jurisdiction$ is a group of [taxpayers|E] made up of [clan|E] and [halakha|E] [vassals|E]. Each $game_concept_tax_jurisdiction$ supports up to #V 12#! $game_concept_taxpayers$.\n\nEach $game_concept_tax_jurisdiction$ can have a [tax_decree|E].\n\nThe number of available $game_concept_tax_jurisdictions$ is determined by [rank|E], [traditions|E], and [innovations|E].\n\nA $game_concept_tax_jurisdiction$ requires a [tax_collector|E] to be appointed."
+ 
+ game_concept_taxpayer_desc: "$game_concept_taxpayers$ are [clan|E] and [halakha|E] [vassals|E] that have been assigned to a [tax_jurisdiction|E], and will contribute monthly [tax|E] Income and [levies|E] as long as a [tax_collector|E] is appointed."
+ 
+ game_concept_unassigned_vassal_desc: "$game_concept_unassigned_vassal$ are [clan|E] and [halakha|E] [vassals|E] who are not assigned to a [tax_jurisdiction|E] as [taxpayers|E], and therefore not contributing [taxes|E] or [levies|E].\n\nOnce assigned to a $game_concept_tax_jurisdiction$ with a [tax_collector|E], they will start paying monthly."
+
+ game_concept_house_succession_law_desc: "In [GetGovernment('clan_government').GetName] and [GetGovernment('halakha_government').GetName] [realms|E] the current [house_unity_level|E] dictates which [succession_law|E] is used.\n\nhalakhos can switch to a $SUCCESSION_LAW_CHANGE_WINDOW_SINGLE_HEIR_LAWS$ Succession Law, which will prevent [house_unity|E] from changing it, but doing so is much harder than normal."
+
+ game_concept_house_head_desc:1 "Every [house|E] within a [dynasty|E] has a $game_concept_house_head$, who wields certain unique powers over the members of the House.\n\nNotably, the House Head can legitimize [bastards|E], call the members of the House to [war|E] and demand conversion of [landed|E] members. The House Head also gets a [weak_hook|E] on all members of their House that are born while they are in power.\n\n[halakha_house_heads|E] have special rules and privileges."
+ game_concept_halakha_house_head: "Halachic House Head"
+ game_concept_halakha_house_heads: "Halachic House Heads"
+ game_concept_halakha_house_head_head: "$game_concept_house_head_head$"
+ game_concept_halakha_house_head_desc: "A $game_concept_halakha_house_head$ is in many ways like a normal [house_head|E], but differs in some notable ways.\n\n$game_concept_halakha_house_heads$ do not get a [weak_hook|E] on all the members of their [house|E]. They have more influence over [house_unity|E] than other house members. Additionally, any house member may challenge a $game_concept_halakha_house_head$ for superiority to become the $game_concept_house_head$ themself."
+

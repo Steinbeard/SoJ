@@ -1,0 +1,213 @@
+﻿00280028 = { #Ovadiyah Radhanite
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_sun_frame.dds"
+		color1 = "black"
+		color2 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.75 0.75 } rotation = -20 }	   
+	}	
+	colored_emblem = {
+		texture = "ce_frame_circle_urnes_pitney.dds"
+		color1 = "black"
+		color2 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.77 0.77 } rotation = -20 }	   
+	}	
+	colored_emblem = {
+		texture = "ace_hebrew_shalom.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.475 } scale = { 0.45 0.45 }  }	   
+	}		   
+}
+
+00280128 = { #Meir Radhanite
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	colored_emblem = {
+		texture = "ce_octogon_frame.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.8 0.8 }  }	   
+	}		
+	colored_emblem = {
+		texture = "ace_hebrew_shmaisrael_guttmann.dds"
+		color1 = "white"
+		instance = { position = { 0.505 0.46 } scale = { 0.56 0.56 }  }	   
+	}		   
+}
+
+00280228 = { #Raitan Radhanite
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_border_shield.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 1 1 }  }	   
+	}		 
+	colored_emblem = {
+		texture = "ce_rubh_el_hizb_iranian_frame.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.45 } scale = { 0.45 0.45 } rotation = -22 }	   
+	}		   
+	colored_emblem = {
+		texture = "ce_star_hexagram.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.45 } scale = { 0.4 0.4 } }	   
+	}	
+}
+
+1022242 = { #gideon overhaul
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_african_frame_05.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { position = { 0.5 0.505 } scale = { 1.1 1.1 }  }	   
+	}		
+	colored_emblem = {
+		texture = "ce_african_frame_05.dds"
+		color1 = "brown"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 1 1 }  }	   
+	}		
+	colored_emblem = {
+		texture = "ace_hebrew_lion_judea.dds"
+		color1 = "black"
+		color2 = "brown"
+		instance = { position = { 0.5 0.46 } scale = { 0.56 0.56 }  }	   
+	}		   
+}
+
+00280428 = { #Ben David
+	pattern = "pattern_solid.dds"
+	color1 = "grey"
+	colored_emblem = {
+		texture = "ce_laurels.dds"
+		color1 = "blue"
+		instance = { position = { 0.5 0.5 } scale = { 1 1 }  }	   
+	}		
+	colored_emblem = {
+		texture = "ce_frame_circle_borre_single.dds"
+		color1 = "blue"
+		color2 = "white"
+		instance = { position = { 0.5 0.46 } scale = { 0.8 0.8 }  }	   
+	}		   
+	colored_emblem = {
+		texture = "ce_star_hexagram.dds"
+		color1 = "blue"
+		instance = { position = { 0.5 0.46 } scale = { 0.56 0.56 }  }	   
+	}		   
+}
+
+00280328 = { #Kochinim dynasty
+	pattern = "pattern_horizontal_split_01.dds"
+	color1 = "purple"
+	color2 = "yellow"	   
+	colored_emblem = {
+		texture = "ce_solomon_star_06.dds"
+		color1 = "purple"
+		instance = { position = { 0.5 0.5 } scale = { 0.62 0.62 }  }	   
+	}		  
+	colored_emblem = {
+		texture = "ce_star_hexagram.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.76 0.76 }  }	   
+	}		     
+	colored_emblem = {
+		texture = "ce_frame_circle_urnes_pitney.dds"
+		color1 = "white"
+		color2 = "purple"
+		instance = { position = { 0.5 0.5 } scale = { 0.76 0.76 }  }	   
+	}	
+}
+
+bar_sheshna = { #Gaon
+	pattern = "pattern_solid.dds"
+	color1 = "green"	   
+	colored_emblem = {
+		texture = "ce_border_circle_fimbriated.dds"
+		color1 = "green"
+		color2 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.85 0.85 }  }
+	}   
+	colored_emblem = {
+		texture = "ce_polylobe_frame.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.78 0.78 }  }	   
+	}		
+	colored_emblem = {
+		texture = "ace_hebrew_gaon.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.67 0.67 }  }	   
+	}		
+}
+
+ben_tsadok = { #Gaon 2
+	pattern = "pattern_solid.dds"
+	color1 = "black"	   
+	colored_emblem = {
+		texture = "ce_pagan_circle_frame.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 1 1 }  }
+	}    
+	colored_emblem = {
+		texture = "ce_pagan_circle_frame.dds"
+		color1 = "black"
+		instance = { position = { 0.5 0.48 } scale = { 1.14 1.14 }  }
+	}   
+	colored_emblem = {
+		texture = "ce_octogon_frame.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.75 0.75 } rotation = 22.5  }	   
+	}		
+	colored_emblem = {
+		texture = "ace_hebrew_tsedek.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.48 } scale = { 0.56 0.56 }  }	   
+	}		
+}
+
+ben_elchanan = { #Gaon 2
+	pattern = "pattern_solid.dds"
+	color1 = "red"	   
+	colored_emblem = {
+		texture = "ce_laurels.dds"
+		color1 = "yellow"
+		instance = { position = { 0.5 0.49 } scale = { 0.97 0.97 }  }
+	}    
+	colored_emblem = {
+		texture = "ce_frame_circle_broa.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { position = { 0.5 0.485 } scale = { 0.77 0.77 }  }
+	}    
+	colored_emblem = {
+		texture = "ace_hebrew_emet.dds"
+		color1 = "yellow"
+		instance = { position = { 0.5 0.48 } scale = { 0.5 0.5 }  }	   
+	}		
+}
+
+apostate_1 = { #spanish apostate
+	pattern = "pattern_solid.dds"
+	color1 = "grey"	   
+	colored_emblem = {
+		texture = "ce_star_khwarezmshah.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.5 0.485 } scale = { 0.88 0.88 }  }
+	}    
+	colored_emblem = {
+		texture = "ce_cross_asturias.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "grey"
+		instance = { position = { 0.5 0.5 } scale = { 0.4 0.4 }  }
+	}    
+	colored_emblem = {
+		texture = "ce_frame_circle_broa.dds"
+		color1 = "white"
+		color2 = "grey"
+		instance = { position = { 0.5 0.485 } scale = { 0.6 0.6 }  }
+	}    	
+}

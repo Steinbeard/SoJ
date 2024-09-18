@@ -1,0 +1,6 @@
+﻿l_english:
+
+ ra_advice_house_unity: "House Unity"
+
+ ra_house_unity_1: "$ra_advice_house_unity$"
+ ra_house_unity_1_desc: "As a [halakha|E] or [clan|E], you have access to [house_unity|E]!\n\nHouse Unity represents the state of internal relationships in your [house|E], which range from Antagonistic to Harmonious. Each [house_unity_level|E] brings an array of effects for all House members, and will determine the active [succession_law|E].\n\nKnowing how to affect House Unity will prove useful for achieving your goals."

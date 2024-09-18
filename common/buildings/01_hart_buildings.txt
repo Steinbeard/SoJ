@@ -1,0 +1,457 @@
+﻿##########
+# OLD MESADA
+##########
+
+masada_01 = {
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_mesada_1.dds"
+	
+	can_construct_potential = {
+		barony = title:b_zughar
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+
+	max_garrison = 50
+
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_1
+		travel_danger = -10
+	}
+	county_modifier = {
+		hostile_raid_time = 0.5
+	}
+	character_modifier = {
+		martial = 1
+		monthly_dynasty_prestige_mult = 0.01
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	
+	next_building = masada_02
+	
+	type = special
+}
+
+masada_02 = {
+
+	asset = {
+		type = pdxmesh
+		name = "fp3_building_special_alamut_castle_01_a_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_mesada_2.dds"
+	
+	can_construct_potential = {
+		barony = title:b_zughar
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder = {
+			culture = { has_cultural_pillar = heritage_israelite }
+		}
+	}
+	
+	cost_gold = 750
+
+	max_garrison = 300
+
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_1
+		fort_level = 2
+		garrison_size = 0.3
+		travel_danger = -20
+	}
+	county_modifier = {
+		development_growth = 0.1
+		development_growth_factor = 0.05
+		levy_size = 1.5
+		hostile_raid_time = 0.5
+	}
+	character_modifier = {
+		martial_per_prestige_level = 1
+		martial = 2
+		knight_limit = 1
+		knight_effectiveness_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.02
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	
+	next_building = masada_03
+	
+	type = special
+}
+
+masada_03 = {
+
+	asset = {
+		type = pdxmesh
+		name = "fp3_building_special_alamut_castle_01_a_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_mesada_2.dds"
+	
+	can_construct_potential = {
+		barony = title:b_zughar
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder = {
+			culture = { has_cultural_pillar = heritage_israelite }
+		}
+	}
+	
+	cost_gold = 1000
+	cost_prestige = 500
+
+	max_garrison = 1000
+
+	province_modifier = {
+		defender_holding_advantage = normal_building_advantage_tier_2
+		fort_level = 5
+		garrison_size = 1
+		travel_danger = -50
+	}
+	county_modifier = {
+		development_growth = 0.25
+		development_growth_factor = 0.1
+		levy_size = 2.5
+		hostile_raid_time = 0.7
+	}
+	character_modifier = {
+		martial_per_prestige_level = 1
+		diplo_per_prestige_level = 1
+		martial = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.25
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	
+	type = special
+}
+
+sura_yeshiva_01 = {
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_yeshiva_sura.dds"
+	
+	can_construct = {
+		scope:holder = {
+			AND = {
+			culture = { has_cultural_pillar = heritage_israelite }
+			OR = {
+			faith = faith:rabbinism
+			faith = faith:merkabah
+			faith = faith:karaism
+			faith = faith:haymanot
+			faith = faith:malabarism
+			faith = faith:kabarism
+			}
+		}
+		}
+	}
+	
+	is_enabled = {
+		custom_description = {
+			text = holy_site_jewish_or_holy_site_trigger
+			scope:holder = {
+				OR = {
+				faith = faith:rabbinism
+				faith = faith:merkabah
+				faith = faith:karaism
+				faith = faith:haymanot
+				faith = faith:malabarism
+				faith = faith:kabarism
+			    }
+			}
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 400
+	cost_prestige = 100
+
+	character_modifier = {
+		monthly_piety = 0.1
+		courtier_and_guest_opinion = 15
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.1
+		development_growth = 0.05
+	}
+	
+	province_modifier = {
+		monthly_income = 1
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	next_building = sura_yeshiva_02
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+sura_yeshiva_02 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_cathedral_generic_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_yeshiva_sura.dds"
+	
+	can_construct = {
+		scope:holder = {
+			AND = {
+			culture = { has_cultural_pillar = heritage_israelite }
+			OR = {
+			faith = faith:rabbinism
+			faith = faith:merkabah
+			faith = faith:karaism
+			faith = faith:haymanot
+			faith = faith:malabarism
+			faith = faith:kabarism
+		    }
+			}
+		}
+	}
+	
+	is_enabled = {
+		custom_description = {
+			text = holy_site_jewish_or_holy_site_trigger
+			scope:holder = {
+				OR = {
+				faith = faith:rabbinism
+				faith = faith:merkabah
+				faith = faith:karaism
+				faith = faith:haymanot
+				faith = faith:malabarism
+				faith = faith:kabarism
+			    }
+			}
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 1000
+	cost_prestige = 200
+
+	character_modifier = {
+		monthly_piety = 0.25
+		monthly_dynasty_prestige_mult = 0.05
+		men_at_arms_maintenance = -0.025
+		courtier_and_guest_opinion = 15
+		monthly_county_control_growth_factor = 0.05
+	}
+	
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.2
+		development_growth = 0.15
+	}
+	
+	province_modifier = {
+		garrison_size = 0.25
+		monthly_income = 2
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+
+kairouan_yeshiva_01 = {
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_yeshiva_kairouan.dds"
+	
+	can_construct = {
+		scope:holder = {
+			AND = {
+			culture = { has_cultural_pillar = heritage_israelite }
+			OR = {
+				faith = faith:rabbinism
+				faith = faith:merkabah
+				faith = faith:karaism
+				faith = faith:haymanot
+				faith = faith:malabarism
+				faith = faith:kabarism
+				}
+			}
+		}
+	}
+	
+	
+	is_enabled = {
+		custom_description = {
+			text = holy_site_jewish_or_holy_site_trigger
+			scope:holder = {
+				OR = {
+				faith = faith:rabbinism
+				faith = faith:merkabah
+				faith = faith:karaism
+				faith = faith:haymanot
+				faith = faith:malabarism
+				faith = faith:kabarism
+			    }
+			}
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 400
+	cost_prestige = 100
+
+	character_modifier = {
+		monthly_piety = 0.1
+		courtier_and_guest_opinion = 15
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.1
+		development_growth = 0.05
+	}
+	
+	province_modifier = {
+		monthly_income = 1
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	next_building = kairouan_yeshiva_02
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+kairouan_yeshiva_02 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_cathedral_generic_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_grand_yeshiva_kairouan.dds"
+	
+	can_construct = {
+		scope:holder = {
+			AND = {
+			culture = { has_cultural_pillar = heritage_israelite }
+			OR = {
+			faith = faith:rabbinism
+			faith = faith:merkabah
+			faith = faith:karaism
+			faith = faith:haymanot
+			faith = faith:malabarism
+			faith = faith:kabarism
+		    }
+			}
+		}
+	}
+	
+	
+	is_enabled = {
+		custom_description = {
+			text = holy_site_jewish_or_holy_site_trigger
+			scope:holder = {
+				OR = {
+				faith = faith:rabbinism
+				faith = faith:merkabah
+				faith = faith:karaism
+				faith = faith:haymanot
+				faith = faith:malabarism
+				faith = faith:kabarism
+			    }
+			}
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 1000
+	cost_prestige = 200
+
+	character_modifier = {
+		monthly_piety = 0.25
+		monthly_dynasty_prestige_mult = 0.05
+		men_at_arms_maintenance = -0.025
+		courtier_and_guest_opinion = 15
+		monthly_county_control_growth_factor = 0.05
+	}
+	
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.2
+		development_growth = 0.15
+	}
+	
+	province_modifier = {
+		garrison_size = 0.25
+		monthly_income = 2
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
