@@ -1,0 +1,122 @@
+# By Steinbeard
+activity_bar_mitzvah = {
+	is_shown = {
+		# TODO can I remove the landed requirement?
+		highest_held_title_tier > tier_barony
+		is_landed = yes
+		faith = {
+			OR = {
+				has_doctrine = temple_authority_rabbinic_doctrine
+				has_doctrine = temple_authority_toric_doctrine
+			}
+		}
+		any_child = {
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			is_at_war = no
+			short_term_gold > bar_mitzvah_activity_cost
+		}
+	}
+
+	can_start_showing_failures_only = {
+		is_available = yes
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			custom_tooltop = {
+				#TODO define these values
+				text = has_someone_selected_to_bar_mitzvah
+				exists = scope:child_to_bar_mitzvah
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			# TODO define this value
+			has_available_bar_mitzvah_target = yes
+		}
+	}
+
+	can_start = {
+		custom_tooltip = {
+			text = has_someone_to_bar_mitzvah_tt
+			has_available_bar_mitzvah_target = yes
+		}
+	}
+
+	is_valid = {
+		scope:host = {
+			is_alive = yes
+			is_imprisoned = no
+			is_landed = yes
+		}
+		# TODO Bar Mitzvah target needs to be alive too
+		# If no one shows up
+		trigger_if = {
+			limit = {
+				is_current_phase_active = yes
+			}
+			has_attending_activity_guests = yes
+		}
+	}
+
+	##############
+	# PARAMETERS
+	##############
+	is_grand_activity = no
+	is_single_location = yes
+
+	province_filter = realm
+	ai_province_filter = capital
+
+	is_location_valid = {
+		has_holding = yes
+	}
+
+	max_province_icons = 5
+
+	cooldown = { years = standard_bar_mitzvah_cooldown_time }
+
+	province_description = {
+		desc = activity_bar_mitzvah_province_desc
+		# Triple good / +++
+		triggered_desc = {
+			# Is Jerusalem
+			trigger = {
+				barony = b_jerusalem
+			}
+			desc = activity_bar_mitzvah_jerusalem_desc
+		}
+		triggered_desc = {
+			trigger = {
+				barony = {
+					is_holy_site_of = scope:host.faith
+				}
+				has_holy_building = yes
+			}
+			desc = activity_bar_mitzvah_major_religious_building_desc
+		}
+		# Double good / ++
+		triggered_desc = {
+			trigger = {
+				barony = {
+					is_holy_site_of = scope:host.faith
+				}
+			}
+			desc = activity_bar_mitzvah_holy_site
+		}
+		# Good / +
+		triggered_desc = {
+			trigger = {
+				has_building_or_higher = temple_01
+				faith.religion = scope:host.faith.religion
+			}
+			desc = activity_bar_mitzvah_temple_desc
+		}
+	}
+}

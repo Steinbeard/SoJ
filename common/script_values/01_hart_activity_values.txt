@@ -1,0 +1,12 @@
+
+
+
+
+######################
+# BAR MITZVAH STUFF
+######################
+
+bar_mitzvah_activity_cost = {
+	value = 0
+	add = standard_activity_base_cost
+}

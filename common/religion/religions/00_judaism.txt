@@ -274,6 +274,13 @@
 			#Doctrines
 			doctrine = doctrine_temporal_head
 			doctrine = doctrine_theocracy_lay_clergy
+
+			localization = {
+				PriestMale = karaism_priest
+				PriestMalePlural = karaism_priest_plural
+				PriestFemale = karaism_priest
+				PriestFemalePlural = karaism_priest_plural
+			}
 		}
 
 		haymanot = {
@@ -354,6 +361,13 @@
 			#Doctrines
 			doctrine = doctrine_theocracy_lay_clergy
 			doctrine = doctrine_temporal_head
+
+			localization = {
+				PriestMale = karaism_priest
+				PriestMalePlural = karaism_priest_plural
+				PriestFemale = karaism_priest
+				PriestFemalePlural = karaism_priest_plural
+			}
 		}
 		
 		samaritan = {
@@ -388,6 +402,13 @@
 			doctrine = doctrine_spiritual_head
 			doctrine = doctrine_pluralism_righteous
 			doctrine = doctrine_monogamy
+
+			localization = {
+				PriestMale = samaritan_priest
+				PriestMalePlural = samaritan_priest_plural
+				PriestFemale = samaritan_priest
+				PriestFemalePlural = samaritan_priest_plural
+			}
 		}
 
 		kabarism = {
