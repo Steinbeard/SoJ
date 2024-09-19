@@ -10,8 +10,14 @@ activity_bar_mitzvah = {
 				has_doctrine = temple_authority_toric_doctrine
 			}
 		}
-		any_child = {
+		OR = {
+			any_child = {
+				is_alive = yes
+				age <= 13
+			}
+			age <= 13
 		}
+
 		trigger_if = {
 			limit = {
 				is_ai = yes
@@ -118,5 +124,200 @@ activity_bar_mitzvah = {
 			}
 			desc = activity_bar_mitzvah_temple_desc
 		}
+	}
+
+	province_score = {
+		value = 0
+		# S-Tier ++++
+		if = {
+			limit = {
+				barony = b_jerusalem
+			}
+			add = 125
+		}
+		# Triple good / +++
+		if = {
+			limit = {
+				barony = {
+					is_holy_site_of = scope:host.faith
+				}
+				has_holy_building = yes
+			}
+			add = 100
+		}
+		# Double good / ++
+		if = {
+			limit = {
+				barony = {
+					is_holy_site_of = scope:host.faith
+				}
+			}
+			add = 50
+		}
+		# Good / +
+		if = {
+			limit = {
+				has_building_or_higher = temple_01
+				faith.religion = scope:host.faith.religion
+			}
+			add = 25
+		}
+	}
+
+	ai_will_do = {
+		add = {
+			value = 30
+			desc = "Base"
+		}
+		add = {
+			value = ai_greed
+			multiply = -0.25
+			desc = "ai_greed"
+		}
+		add = {
+			value = ai_sociability
+			multiply = 0.5
+			desc = "ai_sociability"
+		}
+		if = {
+			limit = {
+				ai_energy < 0
+			}
+			add = {
+				add = ai_energy
+				desc = "ai_energy"
+			}
+		}
+		# TODO Add modifiers based on traits
+		if = {
+			limit = { ai_has_warlike_personality = yes }
+			add = {
+				value = -30
+				desc = "Warlike"
+			}
+		}
+		# Plague
+		if = {
+			limit = {
+				any_held_title = {
+					tier = tier_county
+					any_county_province = {
+						any_province_epidemic = {
+							count >= 1
+							outbreak_intensity < apocalyptic
+						}
+					}
+				}
+				would_follow_social_distancing_value >= -1
+			}
+			add = {
+				value = -60
+				desc = "Plague in Domain"
+			}
+		}
+		else_if = {
+			limit = {
+				any_realm_county = {
+					any_county_province = {
+						any_province_epidemic = {
+							count >= 1
+							outbreak_intensity < apocalyptic
+						}
+					}
+				}
+				would_follow_social_distancing_value >= -1
+			}
+			add = {
+				value = -20
+				desc = "Plague in Top Realm"
+			}
+		}
+		if = {
+    	    limit = {
+    	        any_held_title = {
+					tier = tier_county
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity = apocalyptic
+    	                }
+    	            }
+    	        }
+    	    }
+    	    add = {
+    	        value = -200
+    	        desc = "Apocalyptic Plague in Domain"
+    	    }
+    	}
+    	else_if = {
+    	    limit = {
+    	        any_held_title = {
+					tier = tier_county
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity = apocalyptic
+    	                }
+    	            }
+    	        }
+    	    }
+    	    add = {
+    	        value = -40
+    	        desc = "Apocalyptic Plague in Top Realm"
+    	    }
+    	}
+	}
+
+	###################
+	# GUEST HANDLING
+	###################
+
+	max_guests = 40
+
+	guest_invite_rules = {
+		rules = {
+			1 = activity_invite_rule_hof
+			2 = activity_invite_rule_rivals
+			2 = activity_invite_rule_extended_family
+			3 = activity_invite_rule_vassals_children
+
+			6 = activity_invite_mp
+		}
+		defaults = {
+			2 = activity_invite_rule_liege
+			2 = activity_invite_rule_siblings
+			2 = activity_invite_rule_vassals
+			1 = activity_invite_rule_friends
+			1 = activity_invite_rule_crushes
+			1 = activity_invite_rule_personal_scheme_targets
+			2 = activity_invite_rule_powerful_vassals_children
+			2 = activity_invite_rule_fellow_vassals
+			3 = activity_invite_rule_fellow_vassals_children
+		}
+	}
+
+	
+	can_be_activity_guest = {
+		is_adult = yes
+		is_healthy = yes
+		in_diplomatic_range = scope:host
+	}
+
+	host_intents = {
+		# Hosting is stressful
+		intents= { prestige_intent legitimacy_intent faith_intent learning_intent diplomatic_intent }
+		default = learning_intent
+	}
+
+	guest_intents = {
+		intents = { reduce_stress_intent prestige_intent faith_intent learning_intent diplomatic_intent }
+		default = reduce_stress_intent
+	}
+
+	guest_join_chance = {
+		base = 10
+		base_activity_modifier = yes
+
+		activity_guest_shared_ai_accept_modifier = yes
 	}
 }
