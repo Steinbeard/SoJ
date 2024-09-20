@@ -1,0 +1,12 @@
+# BAR MITZVAH
+
+activity_guest_bar_mitzvah_ai_accept_modifier = {
+	###################
+	# BAR MITZVAH BOY #
+	###################
+	modifier = {
+		add = 10000
+		this = scope:bar_mitzvah_recipient
+		desc = ACTIVITY_GUEST_MY_BAR_MITZVAH
+	}
+}

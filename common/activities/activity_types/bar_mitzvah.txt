@@ -61,13 +61,49 @@ activity_bar_mitzvah = {
 			is_imprisoned = no
 			is_landed = yes
 		}
-		# TODO Bar Mitzvah target needs to be alive too
+		# Bar Mitzvah target needs to be alive too
+		scope:activity.special_guest:bar_mitzvah_recipient = {
+			is_alive = yes
+			is_imprisoned = no
+		}
 		# If no one shows up
 		trigger_if = {
 			limit = {
 				is_current_phase_active = yes
 			}
 			has_attending_activity_guests = yes
+		}
+	}
+
+	on_invalidated = {
+		scope:host ?= { save_scope_as = previous_host }
+		scope:activity.special_guest:bar_mitzvah_recipient ?= { save_scope_as = bar_mitzvah_recipient }
+		# Set up the refund
+		scope:previous_host = {
+			set_variable = {
+				name = gwedding_gold_recoup_value
+				value = {
+					value = 0
+					# For a base, add the total pot spent.
+					add = scope:activity.var:gwedding_refund_pot
+					# Then revise it down a little to account for some costs being irredeemable.
+					multiply = 0.75
+				}
+			} 
+		}
+
+		# One of the spouses was taken prisoner along the way
+		if = {
+			limit = {
+				scope:bar_mitzvah_recipient ?= { is_imprisoned = yes }
+			}
+			scope:bar_mitzvah_recipient = { trigger_event = hart_bar_mitzvah.0920 }
+			every_attending_character = {
+				limit = {
+					NOT = { this = scope:prisoner_spouse }
+				}
+				trigger_event = ep2_wedding.0921
+			}
 		}
 	}
 
@@ -319,5 +355,13 @@ activity_bar_mitzvah = {
 		base_activity_modifier = yes
 
 		activity_guest_shared_ai_accept_modifier = yes
+		activity_guest_bar_mitzvah_ai_accept_modifier = yes
+	}
+
+	special_guests = {
+		bar_mitzvah_recipient = {
+			is_required = yes
+
+		}
 	}
 }

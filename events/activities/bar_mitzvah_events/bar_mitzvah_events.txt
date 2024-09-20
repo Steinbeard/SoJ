@@ -1,0 +1,58 @@
+namespace = bar_mitzvah
+
+## Bar Mitzvah Events
+## by Daniel Steinberg
+
+
+# INVALIDATED
+
+# For the host and the guests - the child died
+
+bar_mitzvah.0900 = {
+    type = character_event
+    title = bar_mitzvah.0900.t
+    desc = bar_mitzvah.0900.desc
+    theme = party
+    left_portrait = {
+        character = root
+        animation = sadness
+    }
+    right_portrait = {
+        character = scope:sad_parent
+        animation = grief
+    }
+
+    immediate = {
+		scope:bar_mitzvah_recipient = {
+			any_parent = {
+				limit = {
+					is_alive = yes
+				}
+				save_scope_as = sad_parent
+			}
+		}
+        if = {
+            limit = {
+                root = scope:previous_host
+            }
+            # The Bar Mitzvah is invalidated: get a refund
+            custom_tooltip = {
+                text = bar_mitzvah.9000.tt
+                add_gold = var:bar_mitzvah_gold_recoup_value
+            }
+        }
+    }
+
+    option = {
+        name = bar_mitzvah.0900.a
+    }
+
+    after = {
+        if = {
+            limit = {
+                has_variable = bar_mitzvah_gold_recoup_value
+            }
+            remove_variable = bar_mitzvah_gold_recoup_value
+        }
+    }
+}
