@@ -1,0 +1,15 @@
+﻿l_english:
+ bar_mitzvah.0900.t:0 "Bar Mitzvah Invalidated"
+ bar_mitzvah.0900.desc:0 "The news of [bar_mitzvah_recipient.GetTitledFirstNamePossessive] sudden death strikes the party as a rumbling thunder on a sunny day.\n\nThe singing turns quiet, smiling faces change to tears, the decorations lay scattered and trampled by a grieving crowd.\n\nIt is a true tragedy that such a day for happiness would turn into a day of mourning..."
+ bar_mitzvah_0900.a:0 "A tragedy indeed..."
+ bar_mitzvah.9000.tt:0 "[previous_host.GetUIName|U] received a refund for the canceled [GetActivityType('activity_bar_mitzvah').GetName] of [gold_i][THIS.Var('bar_mitzvah_gold_recoup_value').GetValue|V0]"
+
+ bar_mitzvah.0910.desc:0 "The news of [dead_child.GetTitledFirstNamePossessive] sudden death strikes me deep to the core, unexpected and tragic as it is on the day of [dead_child.GetHerHis] own Bar Mitzvah.\n\nYou had barely become a [dead_child.GetWomanMan] before you were taken from us."
+ bar_mitzvah.0910.a:0 "Let me alone to mourn..."
+ bar_mitzvah.9015.tt:0 "[ROOT.Char.GetUIName|U] received a refund for the canceled [GetActivityType('activity_wedding').GetName] of [gold_i][THIS.Var('bar_mitzvah_gold_recoup_value').GetValue|V0]"
+ bar_mitzvah.0915.desc:0 "[previous_host.Custom2('MyCharacterIntroduction', ROOT.Char)] was hosting a [GetActivityType('activity_wedding').GetName] at the time of [previous_host.GetHerHis] passing. A delectable activity I was not invited to.\n\nNow that [previous_host.GetSheHe] is gone, the party has fallen in disarray and everyone has been sent home, disappointed."
+ bar_mitzvah.0915.a:0 "I should have been there."
+ bar_mitzvah.0920.desc:0 "I was really looking forward to celebrating my Bar Mitzvah, but it looks like [ROOT.Char.GetFaith.HouseholdGodName] had other plans for me. Given my imprisonment, the party is canceled"
+ bar_mitzvah.0920.a:0 "This is so sad..."
+ bar_mitzvah.0921.desc:0 "The news of [prisoner_child.GetTitledFirstNamePossessive] imprisonment stops all celebrations. The ceremony will be unable to proceed as planned, and is canceled for now."
+ bar_mitzvah.0921.a:0 "So disappointing."

@@ -1,0 +1,55 @@
+bar_mitzvah_death_at_ceremony = {
+	categories = { negative major family } 
+	icon = "activity_wedding.dds"
+
+	description = {
+		random_valid = {
+			desc = bar_mitzvah_death_at_bar_mitzvah_desc_1
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = bar_mitzvah_death_at_bar_mitzvah_desc_second_perspective_1
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = bar_mitzvah_death_at_bar_mitzvah_desc_third_perspective_1
+		}
+	}
+
+	participants = { dead_child }
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+bar_mitzvah_missed_wedding_in_prison = {
+	categories = { negative major family } 
+	icon = "activity_wedding.dds"
+
+	description = {
+		random_valid = {
+			desc = bar_mitzvah_missed_wedding_in_prison_desc_1
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = bar_mitzvah_missed_wedding_in_prison_desc_second_perspective_1
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = bar_mitzvah_missed_wedding_in_prison_desc_third_perspective_1
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}

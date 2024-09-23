@@ -1,0 +1,10 @@
+﻿l_english:
+ bar_mitzvah_death_at_bar_mitzvah:0 "lost a child during their Bar Mitzvah"
+ bar_mitzvah_death_at_bar_mitzvah_desc_1:0 "my [dead_child.Custom('GetDaughterSon')] [dead_child.GetTitledFirstName] died during [dead_child.GetHerHis] Bar Mitzvah"
+ bar_mitzvah_death_at_bar_mitzvah_desc_second_perspective_1:0 "your [dead_child.Custom('GetDaughterSon')] [dead_child.GetTitledFirstName] died during [dead_child.GetHerHis] own Bar Mitzvah"
+ bar_mitzvah_death_at_bar_mitzvah_desc_third_perspective_1:0 "[owner.GetNamePossessive] [dead_child.Custom('GetDaughterSon')] [dead_child.GetTitledFirstName] died during their own Bar Mitzvah"
+ 
+ bar_mitzvah_missed_ceremony_in_prison:0 "missed [GetActivityType('activity_bar_mitzvah').GetName]"
+ bar_mitzvah_missed_ceremony_in_prison_desc_1:0 "I missed my own [GetActivityType('activity_bar_mitzvah').GetName] because I was imprisoned"
+ bar_mitzvah_missed_ceremony_in_prison_desc_second_perspective_1:0 "you missed your own [GetActivityType('activity_bar_mitzvah').GetName] because you were imprisoned"
+ bar_mitzvah_missed_ceremony_in_prison_desc_third_perspective_1:0 "[owner.GetName] missed [owner.GetHerHis] own [GetActivityType('activity_bar_mitzvah').GetName] because [owner.GetSheHe] was imprisoned"

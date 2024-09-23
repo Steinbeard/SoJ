@@ -56,3 +56,179 @@ bar_mitzvah.0900 = {
         }
     }
 }
+
+# For the parents - their bar mitzvah child died
+bar_mitzvah.0910 = {
+	type = character_event
+	title = bar_mitzvah.0900.t
+	desc = bar_mitzvah.0910.desc
+	theme = wedding_ceremony_activity
+	left_portrait = {
+		character = root
+		animation = grief
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				root = scope:previous_host
+			}
+			# The wedding is invalidated: get a refund
+			custom_tooltip = {
+				text = bar_mitzvah.9000.tt
+				add_gold = var:bar_mitzvah_gold_recoup_value
+			}
+		}
+		create_character_memory = {
+			type = bar_mitzvah_death_at_ceremony
+			participants = {
+				dead_child = scope:bar_mitzvah_recipient
+			}
+		}
+		error_log = "Invalidating [activity.GetName] of [activity.GetOwner.GetLogName] because bar mitzvah recipient is dead"
+	}
+
+	option = {
+		name = bar_mitzvah.0910.a
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_variable = bar_mitzvah_gold_recoup_value
+			}
+			remove_variable = bar_mitzvah_gold_recoup_value
+		}
+	}
+}
+
+# If the host who is bar mitzvah recipient dies, notify the heir
+bar_mitzvah.0915 = {
+	type = character_event
+	title = bar_mitzvah.0900.t
+	desc = bar_mitzvah.0915.desc
+	theme = family
+	left_portrait = {
+		character = root
+		animation = sadness
+	}
+	lower_center_portrait = scope:previous_host
+
+	immediate = {
+		# The bar mitzvah is invalidated: get a refund
+		custom_tooltip = {
+			text = bar_mitzvah.9015.tt
+			add_gold = scope:previous_host.var:bar_mitzvah_gold_recoup_value
+		}
+	}
+
+	option = {
+		name = bar_mitzvah.0915.a
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_variable = bar_mitzvah_gold_recoup_value
+			}
+			remove_variable = bar_mitzvah_gold_recoup_value
+		}
+	}
+}
+
+# The bar mitzvah recipient has been imprisoned: for the prisoner
+bar_mitzvah.0920 = {
+	type = character_event
+	title = bar_mitzvah.0900.t
+	desc = bar_mitzvah.0920.desc
+	theme = prison
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { is_in_prison_type = house_arrest }
+			animation = prisonhouse
+		}
+		triggered_animation = {
+			trigger = { is_in_prison_type = dungeon }
+			animation = prisondungeon
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				root = scope:previous_host
+			}
+			# The bar mitzvah is invalidated: get a refund
+			custom_tooltip = {
+				text = bar_mitzvah.9000.tt
+				add_gold = var:bar_mitzvah_gold_recoup_value
+			}
+		}
+		create_character_memory = {
+			type = bar_mitzvah_missed_ceremony_in_prison
+		}
+	}
+
+	option = {
+		name = bar_mitzvah.0920.a
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_variable = bar_mitzvah_gold_recoup_value
+			}
+			remove_variable = bar_mitzvah_gold_recoup_value
+		}
+		remove_variable = promised_grand_wedding_by
+		scope:previous_host = {
+			remove_variable = promised_grand_wedding_marriage_countdown
+		}
+		if = {
+			limit = {
+				has_character_modifier = wedding_fertility_delay_modifier
+			}
+			remove_character_modifier = wedding_fertility_delay_modifier
+		}
+	}
+}
+
+# A spouse has been imprisoned: for everyone else
+bar_mitzvah.0921 = {
+	type = character_event
+	title = bar_mitzvah.0900.t
+	desc = bar_mitzvah.0921.desc
+	theme = wedding_ceremony_activity
+	left_portrait = {
+		character = root
+		animation = sadness
+	}
+	lower_center_portrait = scope:prisoner_spouse
+
+	immediate = {
+		if = {
+			limit = {
+				root = scope:previous_host
+			}
+			# The wedding is invalidated: get a refund
+			custom_tooltip = {
+				text = bar_mitzvah.9000.tt
+				add_gold = var:bar_mitzvah_gold_recoup_value
+			}
+		}
+	}
+
+	option = {
+		name = bar_mitzvah.0921.a
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_variable = bar_mitzvah_gold_recoup_value
+			}
+			remove_variable = bar_mitzvah_gold_recoup_value
+		}
+	}
+}
