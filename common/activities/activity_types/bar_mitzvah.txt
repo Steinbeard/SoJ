@@ -92,17 +92,96 @@ activity_bar_mitzvah = {
 			} 
 		}
 
-		# One of the spouses was taken prisoner along the way
+		# The recipient was taken prisoner along the way
 		if = {
 			limit = {
 				scope:bar_mitzvah_recipient ?= { is_imprisoned = yes }
 			}
-			scope:bar_mitzvah_recipient = { trigger_event = hart_bar_mitzvah.0920 }
+			scope:bar_mitzvah_recipient = { trigger_event = bar_mitzvah.0920 }
 			every_attending_character = {
 				limit = {
-					NOT = { this = scope:prisoner_spouse }
+					NOT = { this = scope:bar_mitzvah_recipient }
 				}
-				trigger_event = ep2_wedding.0921
+				trigger_event = bar_mitzvah.0921
+			}
+		}
+
+		# The activity failed because the recipient died
+		else_if = {
+			limit = {
+				scope:activity.special_guest:bar_mitzvah_recipient = {
+					is_alive = no
+				}
+			}
+			if = {
+				limit = {
+					scope:previous_host = {
+						is_alive = yes
+					}
+				}
+				scope:previous_host = {
+					# Set up the refund
+					set_variable = {
+						name = bar_mitzvah_gold_recoup_value
+						value = {
+							value = 0
+							# For a base, add the total pot spent.
+							add = scope:activity.var:bar_mitzvah_refund_pot
+							# Then revise it down a little to account for some costs being irredeemable.
+							multiply = 0.75
+						}
+					}
+				}
+			}
+			# The host was the bar mitzvah recipient and died
+			else = {
+				scope:previous_host.player_heir = {
+					# Set up the refund
+					set_variable = {
+						name = bar_mitzvah_gold_recoup_value
+						value = {
+							value = 0
+							# For a base, add the total pot spent.
+							add = scope:activity.var:bar_mitzvah_refund_pot
+							# Then revise it down a little to account for some costs being irredeemable.
+							multiply = 0.75
+						}
+					}
+				}
+			}
+			# Special event for surviving parents
+			scope:bar_mitzvah_recipient = {
+				every_parent = {
+					trigger_event = bar_mitzvah.0910
+				}
+			}
+			# Event for all other attending characters, including the host if not a parent
+			scope:activity = {
+				every_attending_character = {
+					limit = {
+						NOR = {
+							this = scope:bar_mitzvah_recipient
+							any_child = {
+								NOT = { this = scope:bar_mitzvah_recipient }
+							}
+						}
+					}
+					trigger_event = bar_mitzvah.0900
+				}
+			}
+			# If the host/spouse died, notify the heir if somewhere else
+			if = {
+				limit = {
+					scope:previous_host = {
+						is_alive = no
+						player_heir = {
+							NOT = { involved_activity ?= scope:activity }
+						}
+					}
+				}
+				scope:previous_host.player_heir = {
+					trigger_event = bar_mitzvah.0915
+				}
 			}
 		}
 	}
